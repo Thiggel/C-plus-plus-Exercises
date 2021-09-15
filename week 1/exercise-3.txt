@@ -1,0 +1,15 @@
+1. Is a valid c++ program
+
+2. Is not a valid c++ program. The third argument of the main function does not exist and should be removed to produce a valid program.
+
+3. Is not a valid program. "return;" without a return value can only be used in void functions. Hence, it should be "return 0;" or, as a best practice, the return statement should just be left out as the compiler will include it automatically.
+
+4. It is a valid c++ program. The size of an object of type "char" is 1, so that 'c' has size 1 as well and the statement is true.
+
+5. argc is the number of elements in the argv array. Therefore, the last element in argv is argv[argc - 1]. From that it follows that argv[argc] gives an error as it is out of the bounds of the array.
+
+6. "exit(0)" will end a program immediately. However, we would not consider it best pratice at all, as it might lead to the program not terminated correctly, i.e. memory might not be freed correctly.
+
+7. True. In C, you would need the "typedef" so that you can just declare "Name foo;" instead of "enum Name foo;". In C++, this already is the case without using "typedef"
+
+8. True

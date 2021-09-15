@@ -1,0 +1,26 @@
+-- Commands entered to compile and link the program: --
+
+generate executable: g++ -Wall -s hello.c hello
+generate object file: g++ -Wall -o hello.c hello.o
+
+
+-- Descriptions of object and executable files: --
+
+Object file: compiled machine code which is not yet linked (libraries etc. are not referenced)
+Executable: ompiled and linked machine code 
+
+
+-- Output: --
+Hello World
+
+
+-- Filesizes: --
+
+Size of source file: 132 bytes
+
+Size of object file: 58260 bytes
+
+Size of executable file: 49856 bytes
+
+Size of iostream file: 2697 bytes
+
