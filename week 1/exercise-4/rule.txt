@@ -1,0 +1,1 @@
+In a RSL of the form R"()", double quotation marks cannot be escaped and lead to an error as the compiler thinks the string is terminated. Therefore, if double quotation marks ought to be used, the form R""()"" should be resorted to.

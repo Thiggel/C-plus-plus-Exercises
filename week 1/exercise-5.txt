@@ -1,0 +1,5 @@
+Redirection refers to the process of using the contents of a file and feeding those into a program as input or taking the output of a program and saving it in a file using operators such as "<" and ">". On the other hand, piping refers to running a program and sending its output directly into a second program as input using the "|" operator.
+
+In the first example, the contents of the file "program" are fed as input into the program "in" using the "<" operator, and then the output of "in" is saved in the file "out" using the ">" operator.
+
+In the second example, the output of the program "program" is used as input for the program "less".
