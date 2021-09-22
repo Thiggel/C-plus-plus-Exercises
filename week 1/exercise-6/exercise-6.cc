@@ -21,5 +21,5 @@ int main()
 	cout << (value - (value >> 1 << 1) ? "odd" : "even") << '\n';	// shift the number one to the right and then back to the left
 									// -> last binary digit gets lost -> subtract from original number
 									// -> get last binary digit (1 => odd)
-	
+	value / 10 * 10 	
 }
