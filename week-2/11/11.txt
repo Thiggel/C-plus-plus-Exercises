@@ -1,0 +1,32 @@
+- describe in your own words how the compiler interprets this statement
+
+The compiler interprets the statement as "if the variable 'first' is equal to the variable 'test1' and also equal to the variable 'test2', set the variable 'value' to 5. On the other hand, if the variable 'first' is equal to the variable 'test1' and not equal to the variable 'test2', set the variable 'value' to 6".
+
+
+- rewrite this statement using the correct layout
+
+if (first == test1) 
+	if (second == test2) 
+		value = 5; 
+	else 
+		value = 6;
+
+
+- how would you change the statement so that the `non-default' interpretation is used
+
+I would change the expression using an OR operator, since I think this is how the statement is intended.
+
+if (first == test1 || first == test2)
+	value = 5;
+else
+	value = 6;
+
+
+- describe in your own words how your changed statement is interpreted
+
+if the variable 'first' is equal to the variable 'test1' or 'test2', set the variable 'value' to 5. Otherwise, set it to 6.
+
+
+- there is a flaw in the way the original statement was formulated
+
+The flaw is that the person who created the statement thought that if they put to if statements right after each other, the 'value' variable will be set to 5 in both cases, although in reality it is only set to 5 if both conditions are true. The flaw can be fixed by putting both conditions in a single if statement and separating them by an OR operator ('||').
