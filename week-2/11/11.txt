@@ -16,7 +16,7 @@ if (first == test1)
 
 I would change the expression using an OR operator, since I think this is how the statement is intended.
 
-if (first == test1 || first == test2)
+if (first == test1 || second == test2)
 	value = 5;
 else
 	value = 6;
@@ -24,7 +24,7 @@ else
 
 - describe in your own words how your changed statement is interpreted
 
-if the variable 'first' is equal to the variable 'test1' or 'test2', set the variable 'value' to 5. Otherwise, set it to 6.
+if the variable 'first' is equal to the variable 'test1' or the variable 'second'  is equal to the variable 'test2', set the variable 'value' to 5. Otherwise, set it to 6.
 
 
 - there is a flaw in the way the original statement was formulated
