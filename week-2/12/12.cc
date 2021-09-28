@@ -2,18 +2,18 @@
 using namespace std;
 
 int main(int argc, char *argv[])
-{
-    string input;
+{	
+	string input;
+	
+	while (true)						// repeat until the input is empty (see below)
+	{
+        	cout << "?";					// always first print question mark
+        	getline(cin, input);				// read an input line 
 
-    while(true){
-        cout << "?";
-        getline(cin,input);
+        	if (input.empty())				// end program if empty
+            		break;
 
-        if (input.empty())
-            break;
-
-        reverse(input.begin(), input.end());
-        cout << '\n' << input << '\n' ;
-
-    }
+        	reverse(input.begin(), input.end());		// reverse input
+        	cout << '\n' << input << '\n' ;			// print the reversed line
+    	}
 }
