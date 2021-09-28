@@ -1,27 +1,19 @@
 #include <iostream>
-
 using namespace std;
 
-int main() 
+int main(int argc, char *argv[])
 {
-        string sentence; 						// initialize variable to save prompted strings in
-	
-        while (true)							// indefinite while loop (gets terminated on a condition inside)
-        {
-               	cout << "? ";                                   	// start the prompt with question mark
-        	getline(cin, sentence);                         	// ask for a string to be reversed
+    string input;
 
-		if (sentence == "") 					// terminate program if user just presses enter
-			break;
+    while(true){
+        cout << "?";
+        getline(cin,input);
 
-		for (
-			char characterIndex = sentence.length() - 1;	// initialize iterator at last index of string
-			characterIndex >= 0; 				// decrement while not at index 0
-			--characterIndex
-		)
-                        cout << sentence[characterIndex];		// print the string from back to front
+        if (input.empty())
+            break;
 
-                cout << '\n';						// terminate the reversed sentence with a new line
-        }
+        reverse(input.begin(), input.end());
+        cout << '\n' << input << '\n' ;
+
+    }
 }
-
