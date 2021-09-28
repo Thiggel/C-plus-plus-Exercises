@@ -1,6 +1,6 @@
 - describe in your own words how the compiler interprets this statement
 
-The compiler interprets the statement as "if the variable 'first' is equal to the variable 'test1' and also equal to the variable 'test2', set the variable 'value' to 5. On the other hand, if the variable 'first' is equal to the variable 'test1' and not equal to the variable 'test2', set the variable 'value' to 6".
+The compiler interprets the statement as "if the variable 'first' is equal to the variable 'test1' and 'second' also equal to the variable 'test2', set the variable 'value' to 5. On the other hand, if the variable 'first' is equal to the variable 'test1' and 'second' is not equal to the variable 'test2', set the variable 'value' to 6".
 
 
 - rewrite this statement using the correct layout
