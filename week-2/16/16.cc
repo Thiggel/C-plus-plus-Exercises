@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc, char* argv[])
 {
     int radix = stoi(argv[1]);						                // convert first arg to int and save as radix
-    int number = atoi(argv[2]);						                    // convert second arg to int and save as number
+    int number = stoi(argv[2]);						                // convert second arg to int and save as number
 
     cout << number << ", displayed using radix " << radix << " is: ";	// print the message (what we're converting)
 
@@ -31,7 +31,8 @@ int main(int argc, char* argv[])
         number /= radix;						                        // remove last digit and repeat everything
     } while (number > 0);                                               // repeat while number is not 0 yet
 
-    if (isNegative) numberInBaseRadix = '-' + numberInBaseRadix;
+    if (isNegative)
+        numberInBaseRadix = '-' + numberInBaseRadix;                    // add a minus if it is negative
 
     cout << numberInBaseRadix << '\n';					                // print answer
 }
