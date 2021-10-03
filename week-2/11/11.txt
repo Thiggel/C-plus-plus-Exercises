@@ -14,9 +14,9 @@ if (first == test1)
 
 - how would you change the statement so that the `non-default' interpretation is used
 
-I would change the expression using an OR operator, since I think this is how the statement is intended.
+I would change the expression using an AND operator, since this will lead to the non-default interpretation.
 
-if (first == test1 || second == test2)
+if (first == test1 && second == test2)
 	value = 5;
 else
 	value = 6;
