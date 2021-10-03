@@ -1,0 +1,10 @@
+#include <iostream>
+
+using namespace std;
+
+struct ReturnValues
+{
+    bool ok;
+    size_t nr;
+    string value;
+};

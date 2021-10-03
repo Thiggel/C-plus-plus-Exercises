@@ -4,32 +4,34 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-	size_t radix = atoi(argv[1]);						// convert first arg to int and save as radix
-	int number = atoi(argv[2]);						// convert second arg to int and save as number
-	
-	cout << number << ", displayed using radix " << radix << " is: ";	// print the message (what we're converting)
+    int radix = stoi(argv[1]);						                // convert first arg to int and save as radix
+    int number = atoi(argv[2]);						                    // convert second arg to int and save as number
 
-	string numberInBaseRadix = "";						// initialize the answer variable
+    cout << number << ", displayed using radix " << radix << " is: ";	// print the message (what we're converting)
 
-	if (!number)								// if the number is 0
-		numberInBaseRadix += "0";					// then it is 0 in any radix
-	
-	while (number)								// while number is not 0 yet
-	{
-		int newDigit = number % radix;					// compute remainder (last digit of new number)
-		
-		string newDigitStr = to_string(newDigit);			// also save as string
+    bool isNegative = false;                                            // handle negative numbers
+    if (number < 0)
+    {
+        isNegative = true;
+        number *= -1;                                                   // still use positive counterpart
+    }
 
-		if (newDigit - 10 >= 0)						// if it is beyond the 10 symbol bases
-		{
-			char character = 'a' + (newDigit - 10);			// then use characters as digits
-			newDigitStr = character;				// and save them in string
-		}
+    string numberInBaseRadix;						                    // initialize the answer variable
 
-		numberInBaseRadix = newDigitStr + numberInBaseRadix;		// append new digit to start of the answer
+    do {
+        int newDigit = number % radix;					                // compute remainder (last digit of new number)
 
-		number /= radix;						// remove last digit and repeat everything
-	}
-	
-	cout << numberInBaseRadix << '\n';					// print answer 
+        char character =
+                newDigit - 10 >= 0                                      // if it is beyond the 10 symbol bases
+                ? 'a' + (newDigit - 10)                                 // then use characters as digits
+                : '0' + newDigit;                                       // otherwise, use number
+
+        numberInBaseRadix = character + numberInBaseRadix;		        // append new digit to start of the answer
+
+        number /= radix;						                        // remove last digit and repeat everything
+    } while (number > 0);                                               // repeat while number is not 0 yet
+
+    if (isNegative) numberInBaseRadix = '-' + numberInBaseRadix;
+
+    cout << numberInBaseRadix << '\n';					                // print answer
 }
