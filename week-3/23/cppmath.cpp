@@ -1,29 +1,44 @@
 
 namespace cppmath
 {
-    int recursiveSqrt(int arg, int previousRoot, int p)
+    int lookupSqrt(int arg)
     {
-        int argCropped = arg / 100;
-        if (argCropped > 0)
-        {
+        int lookupTable = {
+           0,
+           1, 1, 1,
+           2, 2, 2, 2, 2,
+           3, 3, 3, 3, 3, 3, 3,
+           4, 4, 4, 4, 4, 4, 4, 4, 4,
+           5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+           6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+           7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,
+           8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8,
+           9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9
+        };
 
-        }
-
-        int previousRoot = recursiveSqrt(argCropped, 0, 0);
-
-        p = 100 * previousRoot + p;
-
-        int b_est =
-            (p - 100 * (previousRoot << 1)) /
-            (20 * previousRoot);
-
-        while (b_est << 1 > arg)
-            --b_est;
+        return lookupTable[arg];
     }
 
     int sqrt(int arg)
     {
+        int argCropped = arg / 100;
+        if (argCropped < 100)
+        {
+            return lookupSqrt(argCropped);
+        }
 
+        int currentSqrt = arg - 100 * argCropped;
+
+        int previousRoot = recursiveSqrt(argCropped);
+
+        currentSqrt = 100 * previousRoot + currentSqrt;
+
+        int b_est =
+            (currentSqrt - 100 * (previousRoot << 1)) /
+            (20 * previousRoot);
+
+        while (b_est << 1 > arg)
+            --b_est;
     }
 
     size_t sqrt(size_t arg)
