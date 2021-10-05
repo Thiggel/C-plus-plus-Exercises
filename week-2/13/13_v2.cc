@@ -50,16 +50,16 @@ int main(int argc, char* argv[])
 		number -= nearestPowerOfTwo;			        // subtract nearest power of two from original number to
 								                        // repeat the same procedure with the remaining number
 
-		if (!number)					// if we're already at 0
+		if (!number)					                // if we're already at 0
 		{
-			while (remainingBinaryDigits > 0)	// print remaining 0's
+			while (remainingBinaryDigits > 0)	        // print remaining 0's
 			{
-				cout << "0";			// print 0 (see above)
-				--remainingBinaryDigits;	// while decrementing our count of binary digits
+				cout << "0";			                // print 0 (see above)
+				--remainingBinaryDigits;	            // while decrementing our count of binary digits
 			}
-			break;					// end the loop
+			break;					                    // end the loop
 		}
-		calculation += " + ";				// if this is not the end, print a plus sign
+		calculation += " + ";				            // if this is not the end, print a plus sign
 	}
 	cout << " = " << calculation << '\n';			// in the end, also print the calculation and a new line
 }

@@ -1,19 +1,134 @@
-define an int-type parameter?
+1. define an int-type parameter?
 
-It is appropriate to use an int-type parameter when you're handling integral numbers that are negative and positive,
-e.g. -1, 0, 1, 2, 3, etc.
+It is appropriate to use an int-type parameter when you want to change its value directly, hence not leave it constant.
 
-In the code example this is illustrated because ... (your explanation here)
+In the code example this is illustrated because the value of the parameter is changed using arithmetic, so
 
-define a std::string value parameter?
-define a const reference to an int-type parameter?
-define a const reference to a std::string value parameter?
-define a non-const reference to an int-type parameter?
-define a non-const reference to a std::string value parameter?
+int multiply(int num)
+{
+    num = num * 2;
+    return num;
+}
+
+
+2. define a std::string value parameter?
+
+It is appropriate to use an std::string parameter when you want to execute operations
+defined in that class on said object and/or can't save the value you're trying to represent in
+a more primitive type.
+
+In the code example this is illustrated because a std::string is created to save a message that
+is then manipulated, and all of that could not be done with types like int.
+
+std::string printStr(std::string str)
+{
+    str += " is very nice.";
+    str.insert(0, "The string ");
+
+    return str
+}
+
+
+3. define a const reference to an int-type parameter?
+
+It is appropriate to use a const reference to an int-type parameter when the variable passed as the parameter
+shall be changed from inside the function, and it is not const itself (since in that case the function couldn't
+change the variable the reference points to, and thus it would be superfluous to define the parameter as a reference).
+If the reference itself is not to be changed anymore, the const is appropriate.
+
+In the code example this is illustrated because a const int reference is defined as a parameter and the reference
+inside the function is not changed anymore, while the variable the reference points to is changed.
+
+void multiply(const int &num)
+{
+    num = num * 2;
+}
+
+
+4. define a const reference to a std::string value parameter?
+
+It is appropriate to define a const reference to an std::string value if the reference itself will not be changed,
+the variable it points to is not const (as explained above), the variable it points to shall be changed from
+inside the function, and it is not possible to represent the value in a more primitive data type.
+
+In the code example this is illustrated because a piece of text that cannot be represented otherwise
+is referenced and changed from within the function.
+
+void changeStr(const std::string &str)
+{
+    str += " is very nice.";
+    str.insert(0, "The string ");
+}
+
+
+5. define a non-const reference to an int-type parameter?
+
+It is appropriate to define a non-const reference to an int-type parameter when you want to change the value
+of the variable the reference points to and the reference itself.
+
+In the code example this is illustrated because a reference is passed to a function through which the variable it
+refers to is changed, but also the reference itself is changed to point to a different variable after.
+
+int &multiply(int &num)
+{
+    num = num * 2;
+    int num2 = 50;
+    &num = &num2;
+
+    return &num;
+}
+
+
+6. define a non-const reference to a std::string value parameter?
+
+It is appropriate to define a non-const reference to a std::string value when the variable is not
+representable in a primitive type, the value itself must be changed from inside the function and the reference
+to the variable itself shall be changed too.
+
+In the code example this is illustrated because I reference to a string is passed, and the string can only be
+represented as string and gets manipulated using string methods. Additionally, the reference to the string
+itself is changed too.
+
+std:string &changeStr(std::string &str)
+{
+    str += " is very nice.";
+    str.insert(0, "The string ");
+
+    std::string str2 = "Hello";
+
+    &str = &str2;
+
+    return &str;
+}
+
+
 define a const rvalue-reference to an int-type parameter?
+
+Int-type parameters cannot be referenced by an rvalue-reference. Rvalue-references refer to objects that don't have direct
+values that can be changed directly using assignments. Int-type parameters can only be referenced using lvalue-references.
+
+
 define a const rvalue-reference to a std::string parameter?
+
+It is appropriate to define a const rvalue reference to a std::string parameter if the object itself as an rvalue
+will be used in the defined function.
+
+void changeStr(std::string &&str)
+{
+    str.
+}
+
+
 define an rvalue-reference to an int-type parameter?
+
+Int-type parameters cannot be referenced by an rvalue-reference. Rvalue-references refer to objects that don't have direct
+values that can be changed directly using assignments. Int-type parameters can only be referenced using lvalue-references.
+
+
 define an rvalue-reference to a std::string parameter?
+
+
+
 return an int-type value?
 return a std::string value?
 return a const reference to an int?
