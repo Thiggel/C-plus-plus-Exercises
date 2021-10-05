@@ -1,8 +1,9 @@
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
-void printArray(string array[], size_t size)
+void printArray(char *array[], size_t size)                                // print array of strings
 {
     for (size_t index = 0; index < size; ++index)
         cout << array[index] << ' ';
@@ -10,60 +11,82 @@ void printArray(string array[], size_t size)
     cout << '\n';
 }
 
-size_t partition(string array[], size_t left, size_t right)
+bool greaterThan(char* str, char* str2)                                     // compare strings and return
+                                                                            // true if str is greater than str2
+                                                                            // and false if equal or smaller
 {
-    string pivot = array[left];
-    size_t pivotIndex = left;
-
-    ++left;
-
-    cout << left << " " << right << " " << '\n';
-
-    while (left != right)
+    for (
+        size_t characterIndex = 0;
+        characterIndex < max(strlen(str), strlen(str2));                  // loop until the end of the
+        ++characterIndex                                                  // max length string
+    )
     {
-        if (array[left] > pivot)
-        {
-            --right;
-            swap(array[left], array[left - 1]);
-        }
-        else
-        {
-            if(array[left] < pivot)
-                swap(pivot, array[left]);
+        if (characterIndex >= strlen(str))                                 // if out of bounds, we know
+            return false;                                                  // that it's smaller
 
-            pivotIndex = left;
-            ++left;
+        if (
+            characterIndex >= strlen(str2) ||                               // if out of bounds of other
+            tolower(str[characterIndex]) > tolower(str2[characterIndex])    // string or character is greater
+        )
+            return true;                                                    // then we know it's greater
+    }
+
+    return false;                                                           // if they're equal -> false
+}
+
+size_t partition(char* array[], size_t left, size_t right)                 // partition array by pivot
+                                                                            // so that all elements left
+                                                                            // of pivot are smaller
+                                                                            // and all elements right of
+                                                                            // pivot are bigger
+{
+    size_t pivotIndex = left;                                               // use leftmost index as pivot
+    ++left;                                                                 // look at next index
+
+    do
+    {
+        if (greaterThan(array[left], array[pivotIndex]))           // compare strings to pivot
+        {
+            swap(array[left], array[right]);                          // after swap right is
+                                                                             // definitely greater than pivot
+            --right;                                                         // so don't look at it anymore
+        }
+        else                                                                 // if equal or smaller
+        {
+            swap(array[pivotIndex], array[left]);                     // swap pivot and current
+            pivotIndex = left;                                               // also change index
+            ++left;                                                          // that num is definitely
+                                                                             // smaller now
         }
     }
+    while (left <= right);                                                   // repeat until bounds are equal
 
     return pivotIndex;
 }
 
-void quicksort(string array[], size_t first, size_t last)
+void quicksort(char* array[], size_t first, size_t last)
 {
-    if (first >= last)
+    if (first >= last)                                                      // stop if bounds swap
         return;
 
-    printArray(array, 5);
+    size_t pivotIndex = partition(array, first, last);                      // partition the array
+                                                                            // into pivot, lower and
+                                                                            // greater part
+    if(pivotIndex != 0)                                                     // be careful with size_t
+        quicksort(array, first, pivotIndex - 1);                       // repeat with lower part
 
-    size_t pivotIndex = partition(array, first, last);
-
-    printArray(array, 5);
-    cout << pivotIndex << "\n\n";
-
-    quicksort(array, first, pivotIndex - 1);
-    quicksort(array, pivotIndex + 1, last);
+    quicksort(array, pivotIndex + 1, last);                            // repeat with bigger part
 }
+
+extern char *environ[];                                                     // global environment vars
 
 int main()
 {
-    string values[] = {"A", "e", "F", "d", "c"};
+    size_t envLength = 1;
+    while ( environ[envLength] != 0)                                            // determine length of
+                                                                                // environment vars
+            ++envLength;
 
-    for(int index = 0; index < 5; ++index)
-        for(size_t character = 0; character < values[index].length(); character++)
-            values[index][character] = tolower(values[index][character]);
-
-    quicksort(values, 0, 4);
-
-    printArray(values, 5);
+    quicksort(environ, 0, envLength - 1);
+    printArray(environ, envLength);                                               // print newly sorted
 }

@@ -1,0 +1,26 @@
+define an int-type parameter?
+
+It is appropriate to use an int-type parameter when you're handling integral numbers that are negative and positive,
+e.g. -1, 0, 1, 2, 3, etc.
+
+In the code example this is illustrated because ... (your explanation here)
+
+define a std::string value parameter?
+define a const reference to an int-type parameter?
+define a const reference to a std::string value parameter?
+define a non-const reference to an int-type parameter?
+define a non-const reference to a std::string value parameter?
+define a const rvalue-reference to an int-type parameter?
+define a const rvalue-reference to a std::string parameter?
+define an rvalue-reference to an int-type parameter?
+define an rvalue-reference to a std::string parameter?
+return an int-type value?
+return a std::string value?
+return a const reference to an int?
+return a const reference to a std::string?
+return a non-const reference to an int?
+return a non-const reference to a std::string?
+return a const rvalue-reference to an int?
+return a const rvalue-reference to a std::string?
+return an rvalue-reference to an int?
+return an rvalue-reference to a std::string?
