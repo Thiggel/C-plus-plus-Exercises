@@ -5,14 +5,10 @@ using namespace std;
 
 int main()
 {
-    string input;
-    getline(cin, input);
-
-    while (!input.empty())
-        if (Line::getLine(input))
-        {
-            input = Line::next(input);
-
-            cout << input << endl;
-        }
+    Line line;
+    line.getLine();
+    cout << "Next word: " << line.next() << '\n';
+    cout << "Next word: " << line.next() << '\n';
+    cout << "Next word: " << line.next() << '\n';
+    cout << "Next word: " << line.next() << '\n';
 }

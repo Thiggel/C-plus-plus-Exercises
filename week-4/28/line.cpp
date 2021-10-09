@@ -1,25 +1,55 @@
-//
-// Created by Filipe Laitenberger on 08/10/2021.
-//
+#include "line.ih"
 
-#include "line.h"
-
-bool Line::getLine(string &input)
+Line::Line()
 {
-    for (char index : input)    //Loop for each character in string
-        if (!isspace(index))
-            return true;        //Return true if ws-char is found
-
-    return false;               //Return false otherwise
+    // initialize position as first element
+    pos = 0;
 }
 
-string Line::next(string &input)
+bool Line::getLine()
 {
-    string subStr;
-    auto const npos = input.find(' '); //TODO Doesn't work for tab yet
+    // read input line
+    if (!std::getline(std::cin, line))
+        // abort if not read
+        return false;
 
-    if (npos != string::npos) //Return substring if non-ws is found
-        return subStr = input.substr(npos + 1);
+    // Loop for each character in string
+    for (char index : line)
+        // Return true if ws-char is found
+        if (!std::isspace(index))
+            return true;
 
-    return subStr;     //Return empty string if no substring is available
+    // Return false otherwise
+    return false;
+}
+
+std::string Line::next()
+{
+    // no substring left
+    if (pos == std::string::npos)
+        // return empty string
+        return "";
+
+    // set substring empty
+    subStr = "";
+
+    // until next space
+    while (std::isalpha(line[pos]))
+    {
+        // add characters to subStr
+        subStr += line[pos];
+        // remove character from line
+        ++pos;
+    }
+
+    // go to next start of word
+    while (std::isspace(line[pos]))
+        ++pos;
+
+    // set pos to -1 when line ends
+    if (pos >= (line.length() - 1))
+        pos = std::string::npos;
+
+    // return new substring
+    return subStr;
 }
