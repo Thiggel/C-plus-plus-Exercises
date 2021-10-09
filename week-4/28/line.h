@@ -28,7 +28,6 @@ public:
     // characters, and an empty string if no such
     // substring is available anymore
     std::string next();
-
 };
 
 

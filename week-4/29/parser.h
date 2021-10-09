@@ -12,6 +12,7 @@ class Parser
     // is last read number integral
     bool d_isIntegral;
 
+public:
     enum Return
     {
         // the substring didn't contain a number
@@ -22,7 +23,6 @@ class Parser
         EOLN
     };
 
-public:
     // constructor
     Parser();
 

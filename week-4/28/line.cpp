@@ -34,7 +34,10 @@ std::string Line::next()
     subStr = "";
 
     // until next space
-    while (std::isalpha(line[pos]))
+    while (
+        std::isalnum(line[pos]) ||
+        std::ispunct(line[pos])
+    )
     {
         // add characters to subStr
         subStr += line[pos];
