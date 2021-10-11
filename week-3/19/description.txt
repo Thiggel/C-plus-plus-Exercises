@@ -1,0 +1,1 @@
+In this exercise, we are tasked with creating a program that would allow a user to enter lines of words to which the program will do one of 3 things depending on what the user had entered as an argument: print the character count if '-c' is entered as an argument, print the word count if '-w', and print the line count if '-l'.

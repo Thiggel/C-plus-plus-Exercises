@@ -8,3 +8,8 @@ struct ReturnValues
     size_t nr;
     string value;
 };
+
+ReturnValues combine(int argc, char *argv[]);
+void printArgument(const struct ReturnValues& argument);
+bool structCall(int argc, char *argv[]);
+void boundCall(int argc, char *argv[]);

@@ -1,0 +1,1 @@
+For this exercise, we are tasked with creating a program that returns multiple values from a function. We have made a function called "combine" that would return the struct of 3 values with types bool, size_t, and string.
