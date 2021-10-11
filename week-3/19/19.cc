@@ -1,51 +1,22 @@
 #include "main.ih"
-#include <iostream>
-using namespace std;
-
-void numChars()
-{
-    string input;
-
-    size_t numCharacters = 0;
-    while (getline(cin, input))
-        numCharacters += input.length();
-
-    cout << "Number of Characters: " << numCharacters << '\n';
-}
-
-void numWords()                                                         // print number of words in input stream
-{
-    string input;
-
-    size_t numWords = 0;
-    while (cin >> input)
-        ++numWords;
-
-    cout << "Number of words: " << numWords << '\n';
-}
-
-void numLines()
-{
-    string input;
-
-    size_t numLines = 0;
-    while (getline(cin, input))
-        ++numLines;
-
-    cout << "Number of lines: " << numLines << '\n';
-}
 
 int main(int argc, char *argv[])
 {
-    if(argv[1][0] != '-')
-        return 0;
+    if (argv[1][0] != '-')    // check for -w, -c, and -l as argument
+        return 0;            // otherwise, the program was wrongly called
 
-    if (argv[1][1] == 'c')
-        numChars();
+    switch (argv[1][1])
+    {
+        case 'c':
+            numChars();
+            break;
+        case 'w':
+            numWords();
+            break;
+        case 'l':
+            numLines();
+            break;
+    }
 
-    else if (argv[1][1] == 'w')
-        numWords();
-
-    else if (argv[1][1] == 'l')
-        numLines();
+    return 0;
 }

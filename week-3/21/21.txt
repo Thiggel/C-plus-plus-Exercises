@@ -1,8 +1,8 @@
 1. define an int-type parameter?
 
-It is appropriate to use an int-type parameter when you want to change its value directly, hence not leave it constant.
+It is appropriate to use an int-type parameter when you want to pass an integer through a function, whether to manipulate it or to make use of it for some form of arithmetic. The reason to use int, over a reference is that passing int directly is slightly faster as it won't have to be de-referenced later. On a larger scale, this could make a difference.
 
-In the code example this is illustrated because the value of the parameter is changed using arithmetic, so
+In the code example this is illustrated because the value of the parameter is changed using arithmetic;
 
 int multiply(int num)
 {
