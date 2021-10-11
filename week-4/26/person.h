@@ -1,3 +1,6 @@
+#ifndef PERSON_H
+#define PERSON_H
+
 #include <string>
 
 class Person
@@ -9,19 +12,22 @@ class Person
 
 public:
     Person();
-    Person(std::string const &name,
+    explicit Person(std::string const &name,
            std::string const &address = "--unknown--",
-           std::string const &phone,
+           std::string const &phone = "--unknown--",
            size_t mass = 0);
     void setName(std::string const &name);
     void setAddress(std::string const &address);
     void setPhone(std::string const &phone);
     void setMass(size_t mass);
     static bool hasOnly(char const *characters, std::string const &object);
-    void insert(std::ostream &info);
+    static void printPerson(Person const &p);
+    //void insert(std::ostream &info);
 
     std::string const &name()    const;
     std::string const &address() const;
     std::string const &phone()   const;
     size_t mass()                const;
 };
+
+#endif

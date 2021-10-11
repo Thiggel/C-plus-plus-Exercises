@@ -1,6 +1,9 @@
+TODO: 2, 4, 6
+
+
 1. define an int-type parameter?
 
-It is appropriate to use an int-type parameter when you want to pass an integer through a function, whether to manipulate it or to make use of it for some form of arithmetic. The reason to use int, over a reference is that passing int directly is slightly faster as it won't have to be de-referenced later. On a larger scale, this could make a difference.
+It is appropriate to use an int-type parameter when you want to pass an integer through a function, whether to manipulate it or to make use of it for some form of arithmetic. The reason to use int, over a reference is that passing int directly is slightly faster if copying the item is cheap (which with int-types it typically is) as it won't have to be de-referenced later. On a larger scale, this could make a difference.
 
 In the code example this is illustrated because the value of the parameter is changed using arithmetic;
 
@@ -31,17 +34,14 @@ std::string printStr(std::string str)
 
 3. define a const reference to an int-type parameter?
 
-It is appropriate to use a const reference to an int-type parameter when the variable passed as the parameter
-shall be changed from inside the function, and it is not const itself (since in that case the function couldn't
-change the variable the reference points to, and thus it would be superfluous to define the parameter as a reference).
-If the reference itself is not to be changed anymore, the const is appropriate.
+It is appropriate to use a const reference to an int-type parameter when you don't want the variable that is passed through the function to be affected by the function, hence, constant. The reason you want to pass by reference is to prevent a copy of the int-type to be made in cases where copying the int might be computationally expensive.
 
-In the code example this is illustrated because a const int reference is defined as a parameter and the reference
-inside the function is not changed anymore, while the variable the reference points to is changed.
+In the code example this is illustrated because a const int reference is defined as a parameter and the reference inside the function is not changed anymore, while the item being returned is affected by the parameter item.
 
 void multiply(const int &num)
 {
-    num = num * 2;
+    int newNum = num * num;
+    return newNum;
 }
 
 
@@ -63,20 +63,19 @@ void changeStr(const std::string &str)
 
 5. define a non-const reference to an int-type parameter?
 
-It is appropriate to define a non-const reference to an int-type parameter when you want to change the value
-of the variable the reference points to and the reference itself.
+It is appropriate to define a non-const reference to an int-type parameter when you want to affect the int-type directly without having to make a copy and returning it.
 
-In the code example this is illustrated because a reference is passed to a function through which the variable it
-refers to is changed, but also the reference itself is changed to point to a different variable after.
-
-int &multiply(int &num)
+int multiply(int &num)
 {
-    num = num * 2;
-    int num2 = 50;
-    &num = &num2;
-
-    return &num;
+    num *= 10;
 }
+
+int main()
+{
+    int x = 2;
+    multiply(x);  //changes x from 2 to 20.
+}
+
 
 
 6. define a non-const reference to a std::string value parameter?
@@ -89,7 +88,7 @@ In the code example this is illustrated because I reference to a string is passe
 represented as string and gets manipulated using string methods. Additionally, the reference to the string
 itself is changed too.
 
-std:string &changeStr(std::string &str)
+std::string &changeStr(std::string &str)
 {
     str += " is very nice.";
     str.insert(0, "The string ");
@@ -104,20 +103,18 @@ std:string &changeStr(std::string &str)
 
 7. define a const rvalue-reference to an int-type parameter?
 
-Int-type parameters cannot be referenced by an rvalue-reference. Rvalue-references refer to objects that don't have direct
-values that can be changed directly using assignments. Int-type parameters can only be referenced using lvalue-references.
+Int-type parameters cannot be referenced by an rvalue-reference. Rvalue-references refer to objects that don't have direct values that can be changed directly using assignments. Int-type parameters can only be referenced using lvalue-references.
 
 
 8. define a const rvalue-reference to a std::string parameter?
 
-It is appropriate to define a const rvalue reference to a std::string parameter if the object itself as an rvalue
-will be used in the defined function.
+It is appropriate to define a const rvalue reference to a std::string parameter if the object itself as an rvalue will be used in the defined function.
 
 
 
 void changeStr(std::string &&str)
 {
-    str.
+    str;
 }
 
 
@@ -143,23 +140,22 @@ int sum(int input1, int input2)
 
 
 12. return a std::string value?
-It is appropriate to return a std::string value when attempting to end the execution of a std::string type function, resulting
-with the return to the calling function. The code below illustrates this as std::string value is returned at the end of a
+It is appropriate to return a std::string value when attempting to end the execution of a std::string type function, resulting with the return to the calling function.
+
+
+The code below illustrates this as a std::string value is returned at the end of a
 function after being manipulated.
 
 std::string printStr(std::string str)
 {
-    str += " is very nice.";
-    str.insert(0, "The string");
+    str += " additional word";
 
-    return str
+    return str;
 }
 
 
 13. return a const reference to an int? 
-Returning a const reference to an int is appropriate when you don't want to modify any int-values in a function. Furthermore,
-using const references will allow for better efficacy as you won't have to make a copy of the object or primitive. The code
-below demonstrates this as it returns a reference to an int, without being modified.
+Returning a const reference to an int is appropriate when you want to return a property of an int
 
 int data[] = {1,2,3,4};
 
@@ -183,8 +179,7 @@ string const &getString()
 
 
 15. return a non-const reference to an int?
-It is appropriate to return a non-const reference to an int when attempting to modify for example an int-type array. The code
-below illustrates this by modifying an array of data with int-values, then returning the reference to the changed array.
+It is appropriate to return a non-const reference to an int when attempting to modify for example an int-type array. The code below illustrates this by modifying an array of data with int-values, then returning the reference to the changed array.
 
 int data[] = {1,2,3,4}
 
@@ -194,6 +189,8 @@ int &modifyData(int index)
 }
 
 modifyData(1) = 24; //modify 2nd element in data array
+
+
 
 16. return a non-const reference to a std::string?
 It is appropriate to return a non-const reference to a std::string when attempting to modify a string without having to copy

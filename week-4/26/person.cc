@@ -1,3 +1,23 @@
+#include "person.ih"
+#include <iostream>
+
+std::string const &Person::name() const
+{
+    return d_name;
+}
+std::string const &Person::address() const
+{
+    return d_address;
+}
+std::string const &Person::phone() const
+{
+    return d_phone;
+}
+size_t Person::mass() const
+{
+    return d_mass;
+}
+
 
 void Person::setName(std::string const &name)
 {
@@ -45,8 +65,10 @@ Person::Person(std::string const &name, std::string const &address,
     d_mass = mass;
 }
 
-void Person::insert(std::ostream &info)
+void Person::printPerson(const Person &p)
 {
-
+    std::cout << "Name    : " << p.name() << "\n" <<
+              "Address : " << p.address()  << "\n" <<
+              "Phone   : " << p.phone()    << "\n" <<
+              "Mass  : " << p.mass()   << '\n';
 }
-
