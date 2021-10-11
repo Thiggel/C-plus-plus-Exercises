@@ -1,0 +1,28 @@
+Describe in your own words what `encapsulation' and `data hiding' means.
+
+Encapsulation is when data and information is bound together to the functions that
+manipulate said data. This information is wrapped up and cannot be accessed by any
+functions that are not bound (encapsulated) with the data. 
+
+Data hiding, is similar to encapsulation, with the addition that the data can
+only be privately defined. Data hiding can be seen as protecting data in a class
+from being accessed without authorization.
+
+These are important as they allow for better coupling, as well as making sure that
+people can only access things that are supposed to be accessed (prevents people
+from making mistakes).
+
+EXAMPLE:
+
+class Example
+{
+	private:
+		int exampleInt = 0;	  //Example of data hiding - data is hidden
+							  //from the rest of the program
+							  
+	public:
+		Example();
+		void setExampleInt(int const &input) //Example of encapsulation
+											 //exampleInt can now only be manipulated
+											 //through this function.
+};
