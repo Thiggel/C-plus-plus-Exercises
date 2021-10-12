@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 For this exercise, we are tasked with building a simple math library with a set of given functions instructed by the assignment. 
+=======
+For this exercise, a small library should be implemented that defines various
+math functions.
+>>>>>>> 23 description
