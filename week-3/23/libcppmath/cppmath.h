@@ -4,6 +4,8 @@
 #include <iostream>
 #include <cmath>
 
+using namespace std;
+
 unsigned long long sqrt(unsigned long long arg);
 int sqrt(int arg);
 size_t sqrt(size_t arg);
