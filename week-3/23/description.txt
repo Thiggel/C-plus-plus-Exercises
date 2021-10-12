@@ -1,0 +1,1 @@
+For this exercise, we are tasked with building a simple math library with a set of given functions instructed by the assignment. 
