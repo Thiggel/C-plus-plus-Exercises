@@ -10,13 +10,12 @@ Calculator::Calculator() {
     string sign;
     double numB;
 
-    if(
-      parser.number(&numA) == Parser::NUMBER &&
-      sign = parser.next() &&
+    if (
+      parser.number(&numA) == Parser::NUMBER  &&
       parser.number(&numB) == Parser::NUMBER
     )
     {
-      switch (sign)
+      switch (sign.at(0))
       {
         case '+':
           cout << numA + numB;
@@ -33,6 +32,6 @@ Calculator::Calculator() {
       }
     }
 
-    cout << '\n' >> "? ";
+    cout << '\n' << "? ";
   }
 }
