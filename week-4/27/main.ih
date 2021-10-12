@@ -1,0 +1,3 @@
+using namespace std;
+
+void readData(Person array[], size_t size);
