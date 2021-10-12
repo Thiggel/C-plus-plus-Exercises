@@ -1,7 +1,7 @@
 #include "person.ih"
 #include <iostream>
 
-void Person::extract(Person &p)
+void Person::extract()
 {
     std::string name;
     std::string address;
@@ -13,8 +13,8 @@ void Person::extract(Person &p)
     getline(std::cin, phone, ',');
     getline(std::cin, mass);
 
-    p.setName(name);
-    p.setAddress(address);
-    p.setPhone(phone);
-    p.setMass(std::stoi(mass));
+    setName(name);
+    setAddress(address);
+    setPhone(phone);
+    setMass(std::stoi(mass));
 }

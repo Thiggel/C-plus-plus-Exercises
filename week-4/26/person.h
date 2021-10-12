@@ -21,9 +21,9 @@ public:
     void setPhone(std::string const &phone);
     void setMass(size_t mass);
     static void insert(const Person &p);
-    static void extract(Person &p);
+    void extract();
 
-    std::string const name() const
+    std::string const &name() const
     {
         return d_name;
     }
@@ -31,7 +31,7 @@ public:
     {
         return d_address;
     }
-    std::string const phone() const
+    std::string const &phone() const
     {
         return d_phone;
     }
