@@ -14,7 +14,7 @@ Calculator::Calculator() {
       parser.number(&numA) == Parser::NUMBER  &&
       parser.number(&numB) == Parser::NUMBER
     )
-    {
+    {sign = parser.next();
       switch (sign.at(0))
       {
         case '+':
