@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/*int main()
+int main()
 {
     Line line;
     line.getLine();
@@ -10,4 +10,4 @@ using namespace std;
     cout << "Next word: " << line.next() << '\n';
     cout << "Next word: " << line.next() << '\n';
     cout << "Next word: " << line.next() << '\n';
-}*/
+}
