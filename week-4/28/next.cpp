@@ -27,7 +27,7 @@ std::string Line::next()
     ++pos;
 
   // set pos to -1 when line ends
-  if (pos >= (line.length() - 1))
+  if (pos >= line.length())
     pos = std::string::npos;
 
   // return new substring

@@ -2,6 +2,9 @@
 
 bool Line::getLine()
 {
+  // reset the position
+  pos = 0;
+
   // read input line
   if (!std::getline(std::cin, line))
     // abort if not read

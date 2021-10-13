@@ -1,37 +1,27 @@
 #include "calculator.ih"
 
-Calculator::Calculator() {
-    Parser parser = Parser();
+Calculator::Calculator():
+// initialize variables
+numA(0),
+numB(0),
+isAInt(false),
+isBInt(false)
+{
+    // initialize parser
+    parser = Parser();
 
     cout << "? ";
+    // always reset for each operation
     while (parser.reset()) {
-        double numA;
-        string sign;
-        double numB;
+      // evaluate expression
+      if (expression())
+        evaluate();
 
-        if (parser.number(&numA) == Parser::NUMBER)
-        {
-            sign = parser.next();
-
-            if (parser.number(&numB) == Parser::NUMBER)
-            {
-
-                switch (sign.at(0)) {
-                    case '+':
-                        cout << numA + numB;
-                        break;
-                    case '-':
-                        cout << numA - numB;
-                        break;
-                    case '/':
-                        cout << numA / numB;
-                        break;
-                    case '*':
-                        cout << numA * numB;
-                        break;
-                }
-            }
-            cout << '\n' << "? ";
-        }
+      cout << '\n' << "? ";
     }
+}
+
+int main()
+{
+  Calculator();
 }

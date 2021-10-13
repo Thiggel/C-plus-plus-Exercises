@@ -1,6 +1,6 @@
 #include "parser.h"
 
-int main()
+/*int main()
 {
     Parser parser = Parser();
 
@@ -11,4 +11,4 @@ int main()
     parser.number(&number);
 
     std::cout << number << " " << parser.isIntegral() << '\n';
-}
+}*/

@@ -1,0 +1,1 @@
+For this exercise, the task was to create a simple calculator.
