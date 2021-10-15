@@ -2,9 +2,5 @@
 
 std::string Parser::next()
 {
-  // reset integral
-  d_isIntegral = false;
-
-  // return next substring from input
-  return d_line.next();
+  return d_line.next();       // next substr from line
 }

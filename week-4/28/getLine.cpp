@@ -2,20 +2,12 @@
 
 bool Line::getLine()
 {
-  // reset the position
-  pos = 0;
+  d_pos = 0;                                    // reset the position
 
-  // read input line
-  if (!std::getline(std::cin, line))
-    // abort if not read
-    return false;
+  if (!std::getline(std::cin, d_line))   // read input line
+    return false;                               // abort if not read
 
-  // Loop for each character in string
-  for (char index : line)
-    // Return true if ws-char is found
-    if (!std::isspace(index))
-      return true;
-
-  // Return false otherwise
-  return false;
+  return
+    d_line.find_first_not_of("\t\n ")        // return false if only
+    != std::string::npos;                       // whitespace was read
 }

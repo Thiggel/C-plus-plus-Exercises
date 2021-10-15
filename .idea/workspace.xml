@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
+      <change afterPath="$PROJECT_DIR$/week-5/39/39.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/data/data.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/data/dataImp/dataImp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/data/dataImp/dataImp.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/data/dataImp/display.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/data/dataImp/read.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/39/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/40/40.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/40/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/40/order.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Exercises.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set1/7/7.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set1/7/order.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/set1/metadata.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/28.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/getLine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/getLine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/line.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/line.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/line.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/next.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/next.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/29.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/isIntegral.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/isIntegral.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/next.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/next.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/number.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/number.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/pureDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/pureDouble.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/reset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/reset.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1yr68v9GLOghCWG6t25mpPzzfLi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-5/39/data/dataImp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-5/39/data/dataImp" />
+      <recent name="$PROJECT_DIR$/week-4/31/line" />
+      <recent name="$PROJECT_DIR$/week-4/31/parser" />
+      <recent name="$PROJECT_DIR$/week-4" />
+      <recent name="$PROJECT_DIR$/week-3/20" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-5/39/data/dataImp" />
+      <recent name="$PROJECT_DIR$/week-4/31/calculator" />
+      <recent name="$PROJECT_DIR$/week-4/30/calculator" />
+      <recent name="$PROJECT_DIR$/week-3/23/libcppmath" />
+      <recent name="$PROJECT_DIR$/week-3" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="" />
+      <created>1632997204145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632997204145</updated>
+      <workItem from="1632997207855" duration="47294000" />
+      <workItem from="1633683496093" duration="6136000" />
+      <workItem from="1633710561936" duration="29355000" />
+      <workItem from="1634207560815" duration="15235000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

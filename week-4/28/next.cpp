@@ -2,34 +2,23 @@
 
 std::string Line::next()
 {
-  // no substring left
-  if (pos == std::string::npos)
-    // return empty string
-    return "";
+  if (d_pos == std::string::npos)             // no substring left
+    return "";                                // return empty string
 
-  // set substring empty
-  subStr = "";
+  size_t firstWS =
+    d_line.find_first_of("\t\n ", d_pos);  // find first whitespace
 
-  // until next space
-  while (
-          std::isalnum(line[pos]) ||
-          std::ispunct(line[pos])
-          )
-  {
-    // add characters to subStr
-    subStr += line[pos];
-    // remove character from line
-    ++pos;
-  }
+  std::string subStr = d_line.substr(         // compute substring
+    d_pos,                                    // from current pos in line
+    firstWS - d_pos                         // up to whitespace
+  );
 
-  // go to next start of word
-  while (std::isspace(line[pos]))
-    ++pos;
+  d_pos = d_line.find_first_not_of(
+    "\t\n ", firstWS                        // next word starts after WS
+  );
 
-  // set pos to -1 when line ends
-  if (pos >= line.length())
-    pos = std::string::npos;
+  if (d_pos >= d_line.length())               // when line ends
+    d_pos = std::string::npos;                // set pos to npos
 
-  // return new substring
-  return subStr;
+  return subStr;                              // return new substring
 }

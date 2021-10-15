@@ -1,7 +1,6 @@
 #include "parser.ih"
 
-Parser::Parser():
-d_isIntegral(false)
+Parser::Parser()
 {
     d_line = Line();
 }

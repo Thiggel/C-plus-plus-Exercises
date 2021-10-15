@@ -2,32 +2,18 @@
 #define LINE_H
 
 #include <iostream>
+#include <string>
 
 class Line
 {
-    // line that was last read
-    std::string line;
+    std::string d_line;         // last read line
 
-    // position after current
-    // substring in line
-    size_t pos;
-
-    // current substring
-    std::string subStr;
+    size_t d_pos;               // read pos in line
 
 public:
-    // constructor
-    Line();
+    bool getLine();             // read line -> false if only WS
 
-    // read a line and return true if it contains
-    // non-word characters
-    bool getLine();
-
-    // return the next substring from the line
-    // retrieved by getLine() consisting of non-ws
-    // characters, and an empty string if no such
-    // substring is available anymore
-    std::string next();
+    std::string next();         // get next substring in line
 };
 
 

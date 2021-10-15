@@ -1,0 +1,122 @@
+- create a library libdata.a, and compile main.cc to an object file. Link
+main.o against libdata.a and show that the program runs OK
+
+-------------------------- Console --------------------------
+% cd data
+
+% mkdir objectFiles
+
+% for FILE in *.cc; do g++ --std=c++20 -Wall -Werror -c $FILE -o
+objectFiles/$FILE.o; done
+
+% cd objectFiles/
+
+% ar rcs libdata.a *.o
+
+% cd ../../
+
+% g++ --std=c++20 -Wall -Werror -c main.cc -o main.o
+
+% g++ main.o data/objectFiles/libdata.a
+
+% ./a.out
+1
+Object 1: value is: 1
+
+-------------------------------------------------------------
+
+=> The executable works fine and as expected.
+
+
+
+- create a new version of the library
+
+First, I uncommented the definition of d_text in data/data.h and its use in
+data/read.cc.
+
+Then:
+-------------------------- Console --------------------------
+% cd data
+
+% for FILE in *.cc; do g++ --std=c++20 -Wall -Werror -c $FILE -o
+objectFiles/$FILE.o; done
+
+% cd objectFiles/
+
+% ar rcs libdata.a *.o
+
+% cd ../../
+
+% g++ main.o data/objectFiles/libdata.a
+
+% ./a.out
+zsh: segmentation fault  ./a.out
+-------------------------------------------------------------
+
+The executable, when called, ends with a segmentation fault. Hence, the
+program no longer runs OK.
+
+
+- Convert the original class to a class using a pointer to the implementation.
+Redo the first two steps.
+
+To implement the pimpl approach, the following files were created whose
+content is shown below:
+
+data/
+    dataImp/
+        dataImp.h
+        dataImp.ih
+        display.cc
+        read.cc
+
+-------------------------- Console --------------------------
+% cd data
+
+% mkdir objectFiles/dataImp
+
+% for FILE in *.cc dataImp/*.cc; do g++ --std=c++20 -Wall -Werror -c $FILE
+-o objectFiles/$FILE.o; done
+
+% cd objectFiles
+
+% ar rcs libdata.a *.o dataImp/*.o
+
+% cd ../../
+
+% g++ --std=c++20 -Wall -Werror -c main.cc -o main.o
+
+% g++ main.o data/objectFiles/libdata.a
+
+% ./a.out
+1
+Object 1: value is: 1
+-------------------------------------------------------------
+
+The executable works as expected.
+
+Now, we again uncomment line 6 in data/dataImp/dataImp.h and line 5 in
+data/dataImp/read.cc.
+
+Then:
+-------------------------- Console --------------------------
+% cd data
+
+% for FILE in *.cc dataImp/*.cc; do g++ --std=c++20 -Wall -Werror -c $FILE
+-o objectFiles/$FILE.o; done
+
+% cd objectFiles
+
+% ar rcs libdata.a *.o dataImp/*.o
+
+% cd ../../
+
+% g++ main.o data/objectFiles/libdata.a
+
+% ./a.out
+1
+Object 1: value is: 1
+-------------------------------------------------------------
+
+As shown above, the program still works OK, although the library
+implementation was changed.

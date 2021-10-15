@@ -1,6 +1,0 @@
-Set: Set 1
-Authors:
-	Thijs van der Laan (s3986721)
-	Aydan Yagublu (s3980804)
-	Eric Brouwer (s3934640)
-	Filipe Laitenberger (s3894479)

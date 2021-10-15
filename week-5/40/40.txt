@@ -1,0 +1,36 @@
+- Why does the program break in step 2 of the previous exercise?
+
+The header file data.h did not mention the member "std::string d_text" when
+the library had been compiled first and the object file main.o was linked to
+it. Then, the new member was added and the library was recompiled. Because
+main.o was not compiled using the new header file that contained the member,
+but instead using the old one, the program now breaks as a function uses this
+member without it being declared.
+
+
+
+- Why doesn't the program break anymore when using a pointer to the
+implementation?
+
+With the pimpl approach, the header file that is included in main.cc never
+changes. All the member functions of the class Data now use the d_pimpl member
+which is a pointer to a DataImp object. Hence, the program doesn't break if we
+add to the DataImp class since everything we add to it is compiled within the
+library libdata.a, and moreover we never change the implementation of the Data
+class itself. Therefore, no new members could ever appear in its
+implementation that were not present in previous versions of the header file
+data.h.
+
+
+
+- Without the pimple approach: how can these additional data members be added
+to your class without breaking the ABI?
+
+In this case, I would create a class Library_Version_2.0 which extends from
+the current Library class. Hence, everything inside the old library would be
+inside the new one, too. Subsequently, I would add the two new private members
+to the new class.
+Henceforth, users of the version 2.0 of the library can safely include the new
+header file Library_Version_2.0.h and use all the new features of the library,
+while the library will still work for all the old users using the header file
+Library.h.

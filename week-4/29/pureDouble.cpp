@@ -2,36 +2,24 @@
 
 bool Parser::pureDouble(double *dest, std::string const &str)
 {
-  // save position after conversion to see if all
-  // characters of the string were used
-  size_t posAfterConversion = 0;
+  size_t convPos = 0;                   // save position after conversion
 
-  // try converting
-  double temp = std::stod(str, &posAfterConversion);
+  double temp = std::stod(              // try converting
+    str,
+    &convPos                            // save pos to see if all characters
+  );                                    // were used
 
-  // success if all characters were used
-  if (posAfterConversion == str.length())
+
+  if (convPos == str.length())          // if all characters were used
   {
-    // save the converted number in the destination
-    *dest = temp;
+    *dest = temp;                       // save conv. number to destination
 
-    // check if it is a number, and it doesn't
-    // contain '.', 'e' or 'E'
-    size_t dotPos = str.find('.');
-    size_t ePos = str.find('e');
-    size_t EPos = str.find('A');
-
-    if (
-        dotPos == std::string::npos &&
-        ePos == std::string::npos &&
-        EPos == std::string::npos
-    )
-      // if so save that it is an integral value
-      d_isIntegral = true;
+    d_isIntegral =
+      str.find_first_of(".eE")      // if there is ., e, E in str
+      == std::string::npos;            // then its not integral
 
     return true;
   }
 
-  // not all characters were used
-  return false;
+  return false;                       // not all characters were used
 }

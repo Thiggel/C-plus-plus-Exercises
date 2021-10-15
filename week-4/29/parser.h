@@ -2,58 +2,43 @@
 #define PARSER_H
 
 #include <iostream>
+#include <string>
 #include "../28/line.h"
 
 class Parser
 {
-    // current line
-    Line d_line;
+    Line d_line;                            // current line
 
-    // is last read number integral
-    bool d_isIntegral;
+    bool d_isIntegral;                      // is last read number integral
 
 public:
     enum Return
     {
-        // the substring didn't contain a number
         NO_NUMBER,
-        // the substring did contain a number
         NUMBER,
-        // the line didn't contain more substrings
-        EOLN
+        EOLN                                // -> no substr in line anymore
     };
 
-    // constructor
     Parser();
 
-    // fills d_line with the next input line,
-    // returning true if such a line was read
-    bool reset();
+    bool reset();                           // fill d_line -> true if success
 
-    // returns the value stored in the next substring of the just read line.
-    // Its returns type is an enum Return
-    Return number(double *dest);
+    Return number(double *dest);            // get next substr if number
 
-    // returns the value of its d_integral data member
-    // (i.e., true if the value found by number is an integral value,
-    // so it doesn't contain dots, 'e' or 'E' characters).
-    bool isIntegral();
+    bool isIntegral();                      // see whether last number is int
 
-    // returns d_line's next substring.
-    std::string next();
+    std::string next();                     // return next substr
 
 private:
-    // handling the conversion from str to a double,
-    // also taking care of failing conversions
-    Return convert(double *dest, std::string const &str);
+    Return convert(                         // convert str to
+      double *dest,                         // number if possible
+      std::string const &str                // and return the read type
+    );
 
-    // uses stod to convert the str's content to a double. All
-    // the str's characters must be used when computing the double.
-    // If not, then false is returned, otherwise true. If the conversion succeeds
-    // and str containst dot or 'e' or 'E' characters then the member
-    // d_isIntegral is set to false, otherwise to true.
-    bool pureDouble(double *dest, std::string const &str);
+    bool pureDouble(                        // convert str to double
+      double *dest,                         // return true if success
+      std::string const &str
+    );
 };
-
 
 #endif

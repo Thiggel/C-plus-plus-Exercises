@@ -2,6 +2,5 @@
 
 bool Parser::reset()
 {
-  // read line and return true if success
-  return d_line.getLine();
+  return d_line.getLine();        // read line + return true if success
 }
