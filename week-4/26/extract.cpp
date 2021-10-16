@@ -1,20 +1,22 @@
 #include "person.ih"
-#include <iostream>
 
-void Person::extract()
+void Person::extract(istream &inStream)
 {
-    std::string name;
-    std::string address;
-    std::string phone;
-    std::string mass;
+    string name;
+    string address;
+    string phone;
+    string mass;
 
-    getline(std::cin, name, ',');
-    getline(std::cin, address, ',');
-    getline(std::cin, phone, ',');
-    getline(std::cin, mass);
+    getline(inStream, name, ',');
+    getline(inStream, address, ',');
+    getline(inStream, phone, ',');
+    getline(inStream, mass);
 
     setName(name);
     setAddress(address);
     setPhone(phone);
-    setMass(std::stoi(mass));
+    setMass(stoi(mass));
+
+    getline(cin, name);
+
 }

@@ -1,10 +1,9 @@
 #include "person.ih"
-#include <iostream>
 
-void Person::insert(const Person &p)
+void Person::insert(std::ostream &outStream) const
 {
-    std::cout << "Name    : " << p.name() << "\n" <<
-              "Address : " << p.address()  << "\n" <<
-              "Phone   : " << p.phone()    << "\n" <<
-              "Mass  : " << p.mass()   << '\n';
+    outStream << "Name    : " << name() << "\n" <<
+        "Address : " << address()  << "\n" <<
+        "Phone   : " << phone()    << "\n" <<
+        "Mass    : " << mass()   << '\n';
 }

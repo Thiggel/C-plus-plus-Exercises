@@ -1,13 +1,12 @@
-#include "../26/person.ih"
-#include <iostream>
+#include "main.ih"
 
 //Extracts user input from istream into Person object
-void readData(Person array[], size_t size)
+void readData(Person array[], size_t size, istream inStream)
 {
 
-    for(int count = 0; count < size; count++)
+    for (size_t count = 0; count < size; ++count)
     {
-        std::cout << "?";
-        array[count].extract();
+        cout << '?';
+        array[count].extract(inStream);
     }
 }

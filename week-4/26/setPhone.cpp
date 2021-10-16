@@ -1,13 +1,6 @@
 #include "person.ih"
 #include <iostream>
 
-//Aux function
-bool hasOnly(char const *characters, std::string const &object)
-{
-    // object only contains 'characters'
-    return object.find_first_not_of(characters) == std::string::npos;
-}
-
 void Person::setPhone(std::string const &phone)
 {
     if (phone.empty())
@@ -17,3 +10,4 @@ void Person::setPhone(std::string const &phone)
     else
         std::cout << "A phone number may only contain digits\n";
 }
+

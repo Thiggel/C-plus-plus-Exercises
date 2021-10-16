@@ -11,7 +11,7 @@ class from being accessed without authorization.
 
 These are important as they allow for better coupling, as well as making sure
 that people can only access things that are supposed to be accessed (prevents
-people from making mistakes).
+mistakes from being made later down the line).
 
 EXAMPLE:
 
@@ -24,7 +24,8 @@ class Example
 	public:
 		Example();
 		void setExampleInt(int const &input) // Example of encapsulation
-											 // exampleInt can now only be
-											 // manipulated
-											 // through this function.
+
+	// exampleInt can now only be
+	// manipulated
+	// through this function.
 };

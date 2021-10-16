@@ -20,26 +20,31 @@ public:
     void setAddress(std::string const &address);
     void setPhone(std::string const &phone);
     void setMass(size_t mass);
-    static void insert(const Person &p);
-    void extract();
+    bool hasOnly(char const *characters, std::string const &object);
+    void insert(std::ostream &outStream) const;
+    void extract(std::istream &inStream);
 
-    std::string const &name() const
-    {
-        return d_name;
-    }
-    std::string const &address() const
-    {
-        return d_address;
-    }
-    std::string const &phone() const
-    {
-        return d_phone;
-    }
-    size_t mass() const
-    {
-        return d_mass;
-    }
+    std::string const &name() const;
+    std::string const &address() const;
+    std::string const &phone() const;
+    size_t mass() const;
 
 };
 
+inline std::string const &Person::name() const
+{
+    return d_name;
+}
+
+inline std::string const &Person::address() const {
+    return d_address;
+}
+
+inline std::string const &Person::phone() const {
+    return d_phone;
+}
+
+inline size_t Person::mass() const {
+    return d_mass;
+}
 #endif

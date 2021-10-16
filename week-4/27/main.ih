@@ -1,1 +1,7 @@
-#include "main.h"
+#include "../26/person.ih"
+
+using namespace std;
+
+void readData(Person array[], size_t size, std::istream inStream);
+void writeData(Person array[], size_t size, std::ostream outStream);
+istream iStream(streambuf *sb);
