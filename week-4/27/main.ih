@@ -2,6 +2,6 @@
 
 using namespace std;
 
-void readData(Person array[], size_t size, std::istream inStream);
-void writeData(Person array[], size_t size, std::ostream outStream);
+void readData(Person array[], size_t size, std::istream &inStream);
+void writeData(Person array[], size_t size, std::ostream &outStream);
 istream iStream(streambuf *sb);

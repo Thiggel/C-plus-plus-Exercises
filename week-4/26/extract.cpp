@@ -1,22 +1,10 @@
 #include "person.ih"
 
-void Person::extract(istream &inStream)
-{
-    string name;
-    string address;
-    string phone;
+void Person::extract(istream &inStream) {
     string mass;
-
-    getline(inStream, name, ',');
-    getline(inStream, address, ',');
-    getline(inStream, phone, ',');
+    getline(inStream, d_name, ',');
+    getline(inStream, d_address, ',');
+    getline(inStream, d_phone, ',');
     getline(inStream, mass);
-
-    setName(name);
-    setAddress(address);
-    setPhone(phone);
-    setMass(stoi(mass));
-
-    getline(cin, name);
-
+    d_mass = stoi(mass);
 }

@@ -5,14 +5,12 @@ using namespace std;
 
 int main()
 {
-    size_t size = 1;
-
-    streambuf *sbIn = cin.rdbuf();
-
-    ostream oStream(streambuf *sbOut = cout.rdbuf());
+    size_t size = 2;
+    ostream &outStream = cout;
+    istream &inStream = cin;
 
     Person persArray[size];
-    writeData(persArray, size, oStream());
-    //readData(persArray, size, iStream(sbIn));
 
+    readData(persArray, size, inStream);
+    writeData(persArray, size, outStream);
 }

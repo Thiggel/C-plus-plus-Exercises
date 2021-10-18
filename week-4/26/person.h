@@ -21,6 +21,7 @@ public:
     void setPhone(std::string const &phone);
     void setMass(size_t mass);
     bool hasOnly(char const *characters, std::string const &object);
+
     void insert(std::ostream &outStream) const;
     void extract(std::istream &inStream);
 
