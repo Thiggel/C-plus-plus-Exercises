@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include "../28/line.h"
+#include "line/line.h"
 
 class Parser
 {

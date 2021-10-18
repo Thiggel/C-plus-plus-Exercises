@@ -2,6 +2,6 @@
 
 int main()
 {
-  // run the calculator program
-  Calculator();
+  Calculator calc = Calculator();     // run the calculator program
+  calc.run();
 }

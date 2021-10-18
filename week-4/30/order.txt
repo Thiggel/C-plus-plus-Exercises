@@ -1,0 +1,14 @@
+description.txt
+calculator.h
+calculator.ih
+calculator.cpp
+run.cpp
+expression.cpp
+getOperator.cpp
+number.cpp
+evaluate.cpp
+add.cpp
+subtract.cpp
+multiply.cpp
+divide.cpp
+modulo.cpp

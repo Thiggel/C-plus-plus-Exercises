@@ -1,21 +1,13 @@
 #include "calculator.ih"
 
-// returns true if the next line element is a valid operator
-bool Calculator::getOperator()
+bool Calculator::getOperator()      // true if next line el is valid operator
 {
-  string signStr = parser.next();
+  d_sign = d_parser.next();
 
-  if (signStr.length() > 1)
-    return false;
-
-  // save operator in sign variable
-  sign = signStr.at(0);
-
-  // return whether it is a valid operator
-  return
-    sign == '+' ||
-    sign == '-' ||
-    sign == '*' ||
-    sign == '/' ||
-    sign == '%';
+  return                            // return whether it is a valid operator
+    d_sign == "+" ||
+    d_sign == "-" ||
+    d_sign == "*" ||
+    d_sign == "/" ||
+    d_sign == "%";
 }

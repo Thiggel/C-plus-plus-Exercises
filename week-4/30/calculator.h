@@ -2,30 +2,32 @@
 #define EXERCISES_CALCULATOR_H
 
 #include <iostream>
-#include "../29/parser.h"
-
-using namespace std;
+#include <string>
+#include "parser/parser.h"
 
 class Calculator {
-    Parser parser;
-    char sign;
-    double numA;
-    double numB;
-    bool isAInt;
-    bool isBInt;
+    Parser d_parser;
+    std::string d_sign;
+    double d_numA;
+    double d_numB;
+    bool d_isAInt;
+    bool d_isBInt;
 
 public:
     Calculator();
+    void run();                             // start the calculator
 
 private:
-    // return true if line is an expression
-    bool expression();
-    // parse the next line element as a number
-    bool number(double *dest, bool *isInt);
-    // returns true if the next line element is a valid operator
-    bool getOperator();
-    // perform the requested computation
-    void evaluate();
+    bool expression();                      // true if line is an expression
+    bool number(double *dest, bool *isInt); // parse next line el as a number
+    bool getOperator();                     // read operator + true if valid
+    void evaluate();                        // perform requested computation
+
+    void add();                             // operation methods
+    void subtract();
+    void multiply();
+    void divide();
+    void modulo();
 };
 
 

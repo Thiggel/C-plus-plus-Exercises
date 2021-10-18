@@ -1,0 +1,7 @@
+In this exercise, the full calculator program from the previous exercises
+should be handed in as one coherent program, alongside an interaction with
+the program.
+
+Note: the sources for the classes line, parser and calculator were already
+published in the previous exercise 28, 29 and 30. Therefore, they will not be
+repeated here.

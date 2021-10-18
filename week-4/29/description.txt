@@ -1,0 +1,2 @@
+In this exercise, a class should be designed that can read input lines, parse
+the output as substrings and check if substrings are (integral) numbers.

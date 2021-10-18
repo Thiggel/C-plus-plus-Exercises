@@ -1,1 +1,2 @@
-In this exercise we design our own class Line, along with functions getLine() and next().
+In this exercise, a class should be designed that reads input lines, and can
+go through them by splitting them into substrings
