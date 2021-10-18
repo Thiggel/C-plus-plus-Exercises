@@ -1,0 +1,1 @@
+For this exercise we are tasked with creating a simple class: Person from the c++ annotations. On top if this, we also had to make 2 extra functions: insert and extract.

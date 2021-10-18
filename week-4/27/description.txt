@@ -1,0 +1,1 @@
+For this exercise, we build on exercise 26 by creating an array the Person object and use insert and extract to manipulate the object through i/ostreams.

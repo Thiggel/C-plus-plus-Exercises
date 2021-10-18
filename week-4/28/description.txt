@@ -1,0 +1,1 @@
+In this exercise we design our own class Line, along with functions getLine() and next().

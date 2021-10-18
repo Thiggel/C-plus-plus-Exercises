@@ -1,1 +1,1 @@
-For this exercise, the task was to create a simple calculator.
+In this exercise, we furthermore build on ex29 by applying the Parser class to create a simple calculator, where our values are obtained through the istream.
