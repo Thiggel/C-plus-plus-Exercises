@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    size_t size = 2;
+    size_t size = 5;
     ostream &outStream = cout;
     istream &inStream = cin;
 
