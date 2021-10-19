@@ -1,14 +1,14 @@
 #include "line.ih"
 
-std::string Line::next()
+string Line::next()
 {
-  if (d_pos == std::string::npos)             // no substring left
+  if (d_pos == string::npos)                  // no substring left
     return "";                                // return empty string
 
   size_t firstWS =
     d_line.find_first_of("\t\n ", d_pos);  // find first whitespace
 
-  std::string subStr = d_line.substr(         // compute substring
+  string subStr = d_line.substr(              // compute substring
     d_pos,                                    // from current pos in line
     firstWS - d_pos                         // up to whitespace
   );
@@ -18,7 +18,7 @@ std::string Line::next()
   );
 
   if (d_pos >= d_line.length())               // when line ends
-    d_pos = std::string::npos;                // set pos to npos
+    d_pos = string::npos;                     // set pos to npos
 
   return subStr;                              // return new substring
 }

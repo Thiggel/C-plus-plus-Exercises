@@ -7,11 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-4/31/main.ih" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/25/25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/25/25.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/order.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/getLine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/getLine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/line.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/line.ih" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/28/next.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/next.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/convert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/convert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/next.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/next.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/parser.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/parser.ih" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/29/pureDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/pureDouble.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,7 @@
       <workItem from="1634207560815" duration="15586000" />
       <workItem from="1634567911763" duration="271000" />
       <workItem from="1634568197182" duration="2787000" />
-      <workItem from="1634593854195" duration="807000" />
+      <workItem from="1634593854195" duration="1210000" />
     </task>
     <servers />
   </component>
