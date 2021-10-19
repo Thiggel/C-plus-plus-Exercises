@@ -1,4 +1,4 @@
-#include "calculator/calculator.h"
+#include "main.ih"
 
 int main()
 {

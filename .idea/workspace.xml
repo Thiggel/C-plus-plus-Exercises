@@ -7,55 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-4/29/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/29/line/line.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/add.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/divide.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/line/line.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/modulo.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/multiply.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/parser/parser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/run.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/30/subtract.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/31/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-4/31/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-4/31/main.ih" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/28/description.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/description.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/28/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/28/order.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/29/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/order.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/29/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/29/parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/calculator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/calculator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/calculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/calculator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/calculator.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/calculator.ih" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/evaluate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/evaluate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/expression.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/expression.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/getOperator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/getOperator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/30/number.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/30/number.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/calculator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/calculator.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/calculator/calculator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/calculator.ih" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/description.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/evaluate.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/expression.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/getOperator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/calculator/number.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/line/getLine.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/line/line.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/line/line.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/line/line.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/line/line.ih" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/line/next.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/25/25.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/25/25.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-4/31/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/convert.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/isIntegral.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/next.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/number.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/parser.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/parser/parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/parser.ih" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/pureDouble.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-4/31/parser/reset.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-4/31/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-4/31/order.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +88,7 @@
       <workItem from="1634207560815" duration="15586000" />
       <workItem from="1634567911763" duration="271000" />
       <workItem from="1634568197182" duration="2787000" />
-      <workItem from="1634593854195" duration="67000" />
+      <workItem from="1634593854195" duration="807000" />
     </task>
     <servers />
   </component>

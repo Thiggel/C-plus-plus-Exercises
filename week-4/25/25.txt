@@ -25,7 +25,7 @@ class Example
 		Example();
 		void setExampleInt(int const &input) // Example of encapsulation
 
-	// exampleInt can now only be
-	// manipulated
-	// through this function.
+                                            // exampleInt can now only be
+                                            // manipulated
+                                            // through this function.
 };

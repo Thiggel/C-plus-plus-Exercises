@@ -1,3 +1,4 @@
 description.txt
 interaction.txt
+main.ih
 main.cpp
