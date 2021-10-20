@@ -25,11 +25,11 @@ pointer notation:     7
 ----------------------------------------------------------------------------
   main's argv;        argv++[0];
 
-pointer notation:     *((argv++) + 1);
+pointer notation:     *(argv++);
        semantics:     argv++ yields argv in the expression above, as the ++
                       operator after a variable only increments it after
-                      executing the expression. (argv++) + 1 hence yields
-                      the first element beyond argv, which is reached by
+                      executing the expression. argv++ hence yields
+                      the element at argv, which is reached by
                       dereferencing it.
 ----------------------------------------------------------------------------
   main's argv;        argv[0]++;
