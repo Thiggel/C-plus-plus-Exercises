@@ -1,0 +1,1 @@
+In this exercise, index expressions should be converted to pointer notation.

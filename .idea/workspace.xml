@@ -7,8 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-5/36/36.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/36/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-5/36/order.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/data.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/dataImp/display.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/dataImp/read.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/display.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/libdata.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/data/objectFiles/read.cc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/39/main.o" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
