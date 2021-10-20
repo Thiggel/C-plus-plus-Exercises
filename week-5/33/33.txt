@@ -1,0 +1,33 @@
+-Acquire some familiarization with the pointer concept.
+
+1) What differences exist between pointer variables and arrays?
+One big difference between pointer variables and arrays is that pointers
+are VARIABLES. Therefore, operations like pointer=x and pointer++ are legal.
+These operations can't be performed on an array name.
+For example array++ is illegal.
+
+
+
+2) What differences exist between pointer variables and reference variables?
+-Reference variables refer to an already declared variable, but with
+another name. This is different from a pointer variable, because
+pointer variables store the address of a variable.
+-Reference variables cannot be reassigned. They are bound to the variable
+they refer to from initialization. Pointers can be reassigned to point
+to the location of another variable.
+-Reference variables share the same memory address as the variable they
+refer to whereas pointers have their own unique memory address.
+-We can assign the nullptr to a pointer, but not to a reference because
+a reference should always refer to something that exists.
+
+3) How element [3][2] is reached (DONT FORGET SENDING DRAWING!!)
+case a: for the variable 'int array[20][30]'
+See picture
+case b: for the variable 'int *pointer[20]'
+See picture
+
+4) What is meant by 'pointer arithmetic'?
+Pointer arithmetic or 'address arithmetic' is the method of finding or
+calculating memory addresses of object by using arithmetic operations,
+such as pointer++, on pointer variables. With this you can, for example,
+access the elements in an array by incrementing or decrementing a pointer.
