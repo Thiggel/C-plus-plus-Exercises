@@ -1,0 +1,59 @@
+----------------------------------------------------------------------------
+  definition:         rewrite:
+----------------------------------------------------------------------------
+  int x[8];           x[2] = x[3];
+
+pointer notation:     *(x + 2) = *(x + 3);
+       semantics:     x + 2 and x + 3 point to the location of the 2nd and
+                      3rd index beyond x and the elements are reached using
+                      the dereference operator (*). The value of the 2nd
+                      element of x is given the value of its 3rd element.
+----------------------------------------------------------------------------
+  char *argv[8];      cout << argv[2];
+
+pointer notation:     cout << *(argv + 2);
+       semantics:     argv + 2 points to the 2nd element of argv, and, using
+                      the dereference operator (*), its value is passed to
+                      cout.
+----------------------------------------------------------------------------
+  int x[8];           &x[10] - &x[3];
+
+pointer notation:     7
+       semantics:     Subtracting two pointers yields the number of elements
+                      that fit between them. Hence, 7 elements fit between
+                      the pointers of the 10th and 3rd elements beyond x.
+----------------------------------------------------------------------------
+  main's argv;        argv++[0];
+
+pointer notation:     *((argv++) + 1);
+       semantics:     argv++ yields argv in the expression above, as the ++
+                      operator after a variable only increments it after
+                      executing the expression. (argv++) + 1 hence yields
+                      the first element beyond argv, which is reached by
+                      dereferencing it.
+----------------------------------------------------------------------------
+  main's argv;        argv[0]++;
+
+pointer notation:     (*argv)++;
+       semantics:     argv points to the first element of the argv array,
+                      which is reached by dereferencing it. Its value is
+                      incremented. The parantheses are necessary as the
+                      postfix "++" has higher precedence than the dereference
+                      operator.
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0];
+
+pointer notation:     ++*argv;
+       semantics:     argv points to the first element of the argv array,
+                      which is reached by dereferencing it. Its value is
+                      incremented.
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0][2];
+
+pointer notation:     ++*(*argv + 2);
+       semantics:     argv points to the first element of the argv array. It's
+                      reached by dereferencing it. *argv + 2 points to the
+                      second element beyond the first element of the argv
+                      array. That element is again reached by dereferencing it
+                      and then incremented.
+----------------------------------------------------------------------------

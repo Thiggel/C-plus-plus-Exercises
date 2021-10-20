@@ -1,0 +1,67 @@
+1. Operators new and delete on primitive types:
+
+int *num = new int;
+// ...
+delete num;
+
+Here, memory is allocated for an int and then later released. As some actions
+between the new and delete operations might require the dynamic allocation of
+memory, this is appropriate.
+
+
+2. Operators new and delete on class types:
+
+string *str = new string(7, ' ');
+// ...
+delete str;
+
+Here, a string object is initialized with the new operator, calling its
+constructor.
+It is later deleted. Inbetween the two statements, the string length might be
+changed, reallocating memory for it. Hence, using new and delete is
+appropriate here.
+
+
+3. Operators new[] and delete[]:
+
+std::string *sp = new std::string[10];
+// ...
+delete[] sp;
+
+Here, memory for an array of strings is allocated, for which new[] is
+necessary. Later, it must hence be freed again using delete[]. As the array
+size might be changed and memory might be reallocated, it is appropriate to
+use new[] and delete[].
+
+
+4. "operator new" and "operator delete":
+
+string *block = static_cast<string *>(operator new(10 * sizeof(std::string)));
+
+string *str = new(block + 10) "Hello World";
+str->~string();
+
+operator delete(block);
+
+Here, raw memory is allocated for an int using "operator new" and later freed
+using "operator delete". The raw chunk of memory is first allocated and only
+later used when the string that is to be saved is known, which is why it is
+appropriately placed here.
+
+
+5. "placement new":
+
+using std::string;
+
+char buffer[5 * sizeof(string)];
+string *str = new(buffer) string [5];
+
+// ...
+
+for (size_t index = 0; index < 5; ++index)
+    str[index].~string();
+
+In this example, memory of a specific size is allocated using the "placement
+new" operator and can be reallocated later, when the array has to be
+enlarged. In this example, the destructor has to be called for every element
+of the array to free the memory
