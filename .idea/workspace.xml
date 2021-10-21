@@ -7,8 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
+      <change afterPath="$PROJECT_DIR$/week-6/47/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/main.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/assign.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/compare.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/doubleValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/ident.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/intValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol_double.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol_int.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/type.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/value.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symbolOrder/symbolOrder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/at.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/at_const.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/binarySearch.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/destroy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/find.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/findIdx.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/insert.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/resize.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/shift.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/size.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab_destruct.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/charValue_get.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/charValue_set.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/doubleValue_get.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/doubleValue_set.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/intValue_get.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/intValue_set.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/requireSpecial.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/token.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_char.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_double.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_ident.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_int.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-5/36/36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-5/36/36.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,36 +79,37 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-4/31/parser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/47/symtab" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-6/47/symtab" />
+      <recent name="$PROJECT_DIR$/week-6/47/symbol" />
+      <recent name="$PROJECT_DIR$/week-6/47/value" />
       <recent name="$PROJECT_DIR$/week-4/31/parser" />
       <recent name="$PROJECT_DIR$/week-4/31/line" />
-      <recent name="$PROJECT_DIR$/week-4/29" />
-      <recent name="$PROJECT_DIR$/week-4/31/calculator" />
-      <recent name="$PROJECT_DIR$/week-4/30/line" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-6/47/symtab" />
       <recent name="$PROJECT_DIR$/week-5/39/data/dataImp" />
       <recent name="$PROJECT_DIR$/week-4/31/calculator" />
       <recent name="$PROJECT_DIR$/week-4/30/calculator" />
       <recent name="$PROJECT_DIR$/week-3/23/libcppmath" />
-      <recent name="$PROJECT_DIR$/week-3" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -86,6 +128,7 @@
       <workItem from="1634567911763" duration="271000" />
       <workItem from="1634568197182" duration="2787000" />
       <workItem from="1634593854195" duration="1210000" />
+      <workItem from="1634808717182" duration="18030000" />
     </task>
     <servers />
   </component>
@@ -103,5 +146,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

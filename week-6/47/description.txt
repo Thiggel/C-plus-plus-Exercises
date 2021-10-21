@@ -1,0 +1,2 @@
+In this exercise, the data structure of a symbol table should be designed and
+implemented.
