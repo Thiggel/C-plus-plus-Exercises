@@ -7,48 +7,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-6/47/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/main.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/assign.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/compare.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/doubleValue.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/ident.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/intValue.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol_double.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/symbol_int.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/type.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbol/value.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symbolOrder/symbolOrder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/at.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/at_const.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/binarySearch.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/destroy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/find.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/findIdx.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/insert.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/resize.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/shift.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/size.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/symtab/symtab_destruct.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/charValue_get.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/charValue_set.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/doubleValue_get.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/doubleValue_set.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/intValue_get.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/intValue_set.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/requireSpecial.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/token.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_char.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_double.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_ident.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/47/value/value_int.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/main.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/add.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/count.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/enlarge.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/fill.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/frame" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/release.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings1.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings2.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings3.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings4.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/strings/swap.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/43/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/atEoln.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/calculator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/calculator.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/done.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/expr.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/run.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/show.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/term.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/main.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/identifier.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/intordouble.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/nexttoken.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/reset.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer1.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,17 +78,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/47/symtab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/48/calculator" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-6/48/calculator" />
+      <recent name="$PROJECT_DIR$/week-6/48" />
       <recent name="$PROJECT_DIR$/week-6/47/symtab" />
       <recent name="$PROJECT_DIR$/week-6/47/symbol" />
       <recent name="$PROJECT_DIR$/week-6/47/value" />
-      <recent name="$PROJECT_DIR$/week-4/31/parser" />
-      <recent name="$PROJECT_DIR$/week-4/31/line" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/week-6/47/symtab" />
