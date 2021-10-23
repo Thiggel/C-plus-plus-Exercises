@@ -1,0 +1,21 @@
+In String's interface two at members are declared.
+
+1. Why?
+
+The function "at(size_t idx)" contains a call to the function "safeAt(size_t idx)"; this is used to ensure that it is able to safely still return a string in the case that the idx becomes larger than our array size.
+
+
+
+2. Which one is used in the abovementioned main function?
+
+std::string &at(size_t idx);
+
+(non-const) is the one that is being used in the current main function. This is due to the constructor of Strings being non-const as well.
+
+
+
+3. Provide a small (!) example showing a situation where the other at member is used.
+
+Strings strings{ cin }; //old -> Strings const strings{ cin }; //new
+
+By changing the constructor to a const, we now switch to useing the other "at()" function. 
