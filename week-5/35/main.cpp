@@ -17,6 +17,7 @@ int main()
     histogram.count(cin);
 
     cout << histogram.info.nCharObj << endl;
+    cout << histogram.info.ptr << endl;
 
     printHistogram(histogram.info.ptr);
 

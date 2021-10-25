@@ -1,0 +1,1 @@
+Your program should use a class CharCount that does all the hard work. It should offer a member count, that expects a std::istream (at this point it can only be std::cin) and returns the number of characters in the file. (Note that if you want to process a file you should use redirection, by using a command like

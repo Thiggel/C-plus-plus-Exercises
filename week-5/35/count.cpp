@@ -17,7 +17,9 @@ size_t CharCount::count(std::istream &inStream)
                 info.insert(c, &ptr);
                 break;
             case Action::Choice::APPEND:
+                cout << ptr << endl;
                 info.append(c, &ptr);
+                cout << ptr << endl << endl;
                 break;
         }
     }

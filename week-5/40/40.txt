@@ -37,11 +37,20 @@ data.h.
 - Without the pimple approach: how can these additional data members be added
 to your class without breaking the ABI?
 
-In this case, I would create a class Library_Version_2.0 which extends from
-the current Library class. Hence, everything inside the old library would be
-inside the new one, too. Subsequently, I would add the two new private members
-to the new class.
-Henceforth, users of the version 2.0 of the library can safely include the new
-header file Library_Version_2.0.h and use all the new features of the library,
-while the library will still work for all the old users using the header file
-Library.h.
+In this case, I would create an abstract class that I would let my class
+inherit from. Abstract classes are classes that can not be instantiated
+directly, and are just used to define common members and properties of
+subclasses that are similar. A class can be made abstract by declaring at
+least one of its functions as "pure virtual".
+
+Hence, I would declare the
+abstract class and include the two new data members that I want to add in
+there. Subsequently, I would let my old class inherit from this class. As a
+result, I can now access the new data members in all the member functions of
+the old class now, and the ABI will not be broken either, because the header
+file of the old class is not changed with the new update. As a consequence,
+when my new updated library is linked to an object file of one of the users,
+the member functions can just access the new members, as they were declared in
+the abstract class and thus the old header file which my users use to link the
+library does not need to have them declared which results in the ABI not
+breaking
