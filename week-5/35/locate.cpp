@@ -1,6 +1,5 @@
 #include "main.ih"
 
-
 Action CharCount::CharInfo::locate(char const &c, Char *ptrC)
 {
     if (ptrC == nullptr)
@@ -18,5 +17,5 @@ Action CharCount::CharInfo::locate(char const &c, Char *ptrC)
             Action::Choice::INC, ptrC
         };
 
-    locate(c, ptrC + 1);
+    return locate(c, ptrC + 1);
 }
