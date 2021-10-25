@@ -38,17 +38,20 @@ pointer notation:     *(argv++);
 
 pointer notation:     (*argv)++;
        semantics:     argv points to the first element of the argv array,
-                      which is reached by dereferencing it. Its value is
-                      incremented. The parantheses are necessary as the
-                      postfix "++" has higher precedence than the dereference
-                      operator.
+                      which is reached by dereferencing it. The element it
+                      points to is incremented. The parantheses are necessary
+                      as the postfix "++" has higher precedence than the
+                      dereference operator.
 ----------------------------------------------------------------------------
   main's argv;        ++argv[0];
 
 pointer notation:     ++*argv;
        semantics:     argv points to the first element of the argv array,
                       which is reached by dereferencing it. The value of the
-                      element at argv is incremented.
+                      element at argv is incremented. The [] operator has
+                      higher precedence than the preincrement operator, which
+                      is why the element has to be dereferenced before being
+                      incremented.
 ----------------------------------------------------------------------------
   main's argv;        ++argv[0][2];
 
