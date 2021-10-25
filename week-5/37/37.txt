@@ -1,5 +1,3 @@
-TODO: 4, 5
-
 1. declare (!) a variable ptr pointing to rows of 8 doubles
 
 double *ptr[8];
@@ -20,6 +18,7 @@ std::string (**fun())[6][6];
 
 
 5. Declare a function fun as in the previous item, now using StringMat
+
 StringMat (*fun())[6];
 
 6. complete the following function by providing the initialization section of its for-statement (submit the completed function):
