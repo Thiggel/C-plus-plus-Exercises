@@ -1,6 +1,5 @@
 #include "main.ih"
 
-
 Action CharCount::CharInfo::locate(char const &c, Char *ptrC)
 {
     if (ptrC == nullptr)
