@@ -12,16 +12,18 @@ pointer notation:     *(x + 2) = *(x + 3);
   char *argv[8];      cout << argv[2];
 
 pointer notation:     cout << *(argv + 2);
-       semantics:     argv + 2 points to the 2nd element of argv, and, using
-                      the dereference operator (*), its value is passed to
-                      cout.
+       semantics:     argv + 2 points to the 3rd element of argv, and,
+                      using the dereference operator (*), its value is passed
+                      to cout.
 ----------------------------------------------------------------------------
   int x[8];           &x[10] - &x[3];
 
-pointer notation:     7
-       semantics:     Subtracting two pointers yields the number of elements
+pointer notation:     WC (or 7, if x was large enough)
+       semantics:     x only has 8 elements, which is why &x[10]
+                      will cause an error. If x was large enough: Subtracting
+                      two memory addresses yields the number of elements
                       that fit between them. Hence, 7 elements fit between
-                      the pointers of the 10th and 3rd elements beyond x.
+                      the 10th and 3rd elements beyond x.
 ----------------------------------------------------------------------------
   main's argv;        argv++[0];
 
@@ -45,8 +47,8 @@ pointer notation:     (*argv)++;
 
 pointer notation:     ++*argv;
        semantics:     argv points to the first element of the argv array,
-                      which is reached by dereferencing it. Its value is
-                      incremented.
+                      which is reached by dereferencing it. The value of the
+                      element at argv is incremented.
 ----------------------------------------------------------------------------
   main's argv;        ++argv[0][2];
 
