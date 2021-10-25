@@ -16,11 +16,11 @@ std::string *const *ptr[n][n];
 
 4. declare a function fun expecting no parameters, returning a matrix of 6 x 6 std::string objects
 
-std::string fun() ????
+std::string (**fun())[6][6];
 
 
 5. Declare a function fun as in the previous item, now using StringMat
-?????
+StringMat (*fun())[6];
 
 6. complete the following function by providing the initialization section of its for-statement (submit the completed function):
 
