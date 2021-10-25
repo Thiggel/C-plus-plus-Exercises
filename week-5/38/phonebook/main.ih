@@ -1,0 +1,28 @@
+#include <iostream>
+
+#include "finder/finder.h"
+
+//phonebook
+class PhoneBook
+{
+    static Finder s_finder;                     // need only 1 finder
+
+    public:
+        PhoneBook();                            // initializes the phone book
+
+                        // users may insert/update name/phone pairs
+        void insert(std::string const &name, std::string const &phone);
+
+                        // users can retrieve name's phone nr. returns 0 if
+                        // 'name' is not in s_finder
+        std::string const *get(std::string const &name) const;
+};
+//=
+
+inline void PhoneBook::insert(std::string const &name, 
+                              std::string const &phone) 
+{
+    s_finder.insert(name, phone);
+}
+
+using namespace std;

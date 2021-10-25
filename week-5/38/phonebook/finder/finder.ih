@@ -1,0 +1,3 @@
+#include "finder.h"
+
+using namespace std;
