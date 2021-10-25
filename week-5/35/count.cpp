@@ -6,17 +6,20 @@ size_t CharCount::count(std::istream &inStream)
 
     while(inStream.get(c))
     {
-        auto [action, ptr] = info.locate(c);
+        auto [choice, ptr] = info.locate(c, info.ptr);
 
-        switch(action)
+        switch (choice)
         {
             case Action::Choice::INC:
                 info.increment(ptr);
+                break;
             case Action::Choice::INSERT:
-                info.insert(c,ptr);
+                info.insert(c, &ptr);
+                break;
+            case Action::Choice::APPEND:
+                info.append(c, &ptr);
+                break;
         }
-
-
     }
-
+    return info.nCharObj;
 }

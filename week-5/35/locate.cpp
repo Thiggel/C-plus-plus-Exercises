@@ -1,24 +1,22 @@
 #include "main.ih"
 
-Action CharCount::CharInfo::locate(char const &c)
+
+Action CharCount::CharInfo::locate(char const &c, Char *ptrC)
 {
-    for (size_t index = 0; index < nCharObj; ++index)
-    {
-        if (ptr[index].d_ch == c)
-            return
-            {
-                    Action::Choice::INC, &ptr[index]
-            };
+    if (ptrC == nullptr)
+        return {
+            Action::Choice::APPEND, ptrC
+        };
 
-        else if (ptr[index].d_ch < c)
-            return
-            {
-                    Action::Choice::INSERT, &ptr[index]
-            };
-    }
+    else if (ptrC->d_ch < c)
+        return {
+            Action::Choice::INSERT, ptrC
+        };
 
-    return
-    {
-            Action::Choice::APPEND, &ptr[nCharObj]
-    };
+    else if (ptrC->d_ch == c)
+        return {
+            Action::Choice::INC, ptrC
+        };
+
+    locate(c, ptrC + 1);
 }

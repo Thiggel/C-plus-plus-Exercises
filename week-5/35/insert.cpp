@@ -1,7 +1,8 @@
 #include "main.ih"
 
-void CharCount::CharInfo::insert(const char c, Char *ptr)
+void CharCount::CharInfo::insert(char &c, Char **ptrC)
 {
-    ptr = new Char(c);
-    
+    ++nCharObj;
+    *ptrC = new Char(c, *ptrC);
 }
+

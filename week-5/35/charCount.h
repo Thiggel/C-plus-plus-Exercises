@@ -10,22 +10,18 @@ struct CharCount
 {
     struct CharInfo
     {
-        struct Char *ptr = nullptr;
+        Char *ptr = nullptr;
         size_t nCharObj = 0;
 
-        Action locate(char const &c);
-        void append();
-        void insert(char c, Char *ptr);
-        static void increment(Char *ptr);
+        Action locate(const char &c, Char *ptrC);
+        void append(char &c, Char **ptrC);
+        void insert(char &c, Char **ptrC);
+        void increment(Char *ptrC) const;
     };
 
     CharInfo info;
     size_t count(std::istream &inStream);
 
-
 };
-
-
-
 
 #endif

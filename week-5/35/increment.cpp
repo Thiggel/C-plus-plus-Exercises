@@ -1,8 +1,8 @@
 #include "main.ih"
 
-void CharCount::CharInfo::increment(Char *ptr)
+void CharCount::CharInfo::increment(Char *ptrC) const
 {
-    ++(ptr->d_count);
+    ptrC->d_count++;
 }
 
 
