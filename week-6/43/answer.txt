@@ -2,7 +2,7 @@ In String's interface two at members are declared.
 
 1. Why?
 
-The function "at(size_t idx)" contains a call to the function "safeAt(size_t idx)"; this is used to ensure that it is able to safely still return a string in the case that the idx becomes larger than our array size.
+The function "at(size_t idx)" contains a call to the function "safeAt(size_t idx)"; this is used to ensure that it is able to safely still return a string in the case that the idx becomes larger than our array size. "at(size_t)" in turn is used to return a string at idx.
 
 
 

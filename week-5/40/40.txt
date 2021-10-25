@@ -2,10 +2,21 @@
 
 The header file data.h did not mention the member "std::string d_text" when
 the library had been compiled first and the object file main.o was linked to
-it. Then, the new member was added and the library was recompiled. Because
-main.o was not compiled using the new header file that contained the member,
-but instead using the old one, the program now breaks as a function uses this
-member without it being declared.
+it. Then, the new member was added and the library was recompiled. Main.o was
+not compiled using the new header file that contained the member,
+but instead using the old one.
+Hence, main.o resorts to a header file that declares the member function
+"bool read()" but where the member "std::string d_text" is not declared.
+Furthermore, in the older version of the library that this header file was
+published with, the member function "bool read()" does not work with a member
+"std::string d_text" in its implementation.
+However, in the newer version of the library, the header file declares the
+member "std::string d_text" and that member is worked with in the member
+function "bool read()". Hence, when the file main.o is compiled with the new
+version of the library, it still has the old ABI of the library where
+"std::string d_text" had not been declared, and upon calling "bool read()",
+the ABI breaks as the new version of the function works with an undeclared
+member.
 
 
 

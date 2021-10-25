@@ -7,41 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-6/43/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/main.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/add.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/count.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/enlarge.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/fill.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/frame" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/release.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings1.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings2.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings3.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/strings4.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/strings/swap.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/43/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/atEoln.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/calculator.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/calculator.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/done.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/expr.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/run.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/show.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/calculator/term.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/main.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/identifier.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/intordouble.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/nexttoken.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/reset.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/48/tokenizer/tokenizer1.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-5/36/36.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-5/36/36.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,24 +45,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/48/calculator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/45/sort" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-6/45/sort" />
       <recent name="$PROJECT_DIR$/week-6/48/calculator" />
       <recent name="$PROJECT_DIR$/week-6/48" />
       <recent name="$PROJECT_DIR$/week-6/47/symtab" />
       <recent name="$PROJECT_DIR$/week-6/47/symbol" />
-      <recent name="$PROJECT_DIR$/week-6/47/value" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-6/45" />
       <recent name="$PROJECT_DIR$/week-6/47/symtab" />
       <recent name="$PROJECT_DIR$/week-5/39/data/dataImp" />
       <recent name="$PROJECT_DIR$/week-4/31/calculator" />
       <recent name="$PROJECT_DIR$/week-4/30/calculator" />
-      <recent name="$PROJECT_DIR$/week-3/23/libcppmath" />
     </key>
   </component>
   <component name="RunManager">

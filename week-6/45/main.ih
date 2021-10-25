@@ -1,0 +1,7 @@
+#include "sort/sort.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+int increasing(const void *strA, const void *strB);
