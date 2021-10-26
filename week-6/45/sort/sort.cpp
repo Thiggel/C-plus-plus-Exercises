@@ -2,5 +2,5 @@
 
 void Sort::sort(string **strArrFirstEl, size_t nmemb)
 {
-  qsort(*strArrFirstEl, nmemb, sizeof(string *), d_compare);
+    qsort_r(*strArrFirstEl, nmemb, sizeof(string *), this, d_compare);
 }

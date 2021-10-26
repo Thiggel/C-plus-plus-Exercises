@@ -1,6 +1,6 @@
 #include "sort.ih"
 
-Sort::Sort(int (*compare)(const void *strA, const void *strB))
+Sort::Sort(int (*compare)(void*, const void*, const void*))
 :
   d_compare(compare)
 {}

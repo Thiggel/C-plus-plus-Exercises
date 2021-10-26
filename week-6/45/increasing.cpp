@@ -1,8 +1,13 @@
 #include "main.ih"
 
-int increasing(const void *strA, const void *strB)
+int increasing(void *obj, const void *voidA, const void *voidB)
 {
-  return  *strA > *strB ? 1 :
-         *strA < *strB ? -1 :
-          0;
+    const string strA = *reinterpret_cast<const string *>(voidA);
+    const string strB = *reinterpret_cast<const string *>(voidB);
+
+    cout << strA << " " << strB << endl;
+
+    return  strA > strB ? 1 :
+            strA < strB ? -1 :
+            0;
 }

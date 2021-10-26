@@ -4,4 +4,4 @@
 
 using namespace std;
 
-int increasing(const void *strA, const void *strB);
+int increasing(void *obj, const void *voidA, const void *voidB);
