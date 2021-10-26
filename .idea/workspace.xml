@@ -8,11 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/increasing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/increasing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/main.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/main.ih" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/43/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
