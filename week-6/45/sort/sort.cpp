@@ -1,6 +1,13 @@
+#include <iostream>
 #include "sort.ih"
 
 void Sort::sort(string **strArrFirstEl, size_t nmemb)
-{
-    qsort_r(*strArrFirstEl, nmemb, sizeof(string *), this, d_compare);
+{                                       // wrapper for C-sort-function
+    qsort_r(                            // use C-function
+        strArrFirstEl,
+        nmemb,
+        sizeof(string *),
+        this,                           // give this class context
+        d_compare                       // inject compare function
+    );
 }

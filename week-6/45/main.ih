@@ -1,7 +1,11 @@
 #include "sort/sort.h"
 #include <string>
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
-int increasing(void *obj, const void *voidA, const void *voidB);
+string tolowercase(string str);
+
+int increasing(void *obj, const void *ptrA, const void *ptrB);
+int nocasedec(void *obj, const void *ptrA, const void *ptrB);

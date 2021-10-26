@@ -1,0 +1,2 @@
+The task in this exercise was to build a wrapper class around the C-function
+qsort_r that sorts an array of strings.
