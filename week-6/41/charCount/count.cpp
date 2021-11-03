@@ -7,10 +7,18 @@ size_t CharCount::count(istream &in)
 
     char ch;
 
+    CharIndex (CharCount::*s_CharPtr[])(CharIndex chi) =
+    {
+            &CharCount::insert,
+            &CharCount::append,
+            &CharCount::inc
+    };
+
     while (in.get(ch))                  // retrieve all chars from 'in'
     {
         ++nCharObjs;
-        process(ch);                    // add ch to the set of characters
+        d_CharPtr(s_CharPtr[ch]);
+        process(ch);
     }
 
     return nCharObjs;

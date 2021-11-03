@@ -1,6 +1,6 @@
 #include "charCount.ih"
 
-CharCount::Char *CharCount::enlarge(Char *old) const
+CharCount::Char *CharCount::enlarge(Char *old)
 {
     d_info.capacity *= 2;
     Char *tmp = rawCapacity();

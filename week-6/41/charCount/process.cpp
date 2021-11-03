@@ -1,8 +1,10 @@
 #include "charCount.ih"
 
-CharCount::Char CharCount::process(char ch)
+void CharCount::process(char ch)
 {
-    size_t idx = locate(&idx, ch);
+    CharIndex chi{};
+    chi.idx = locate(&chi.idx, ch);
+    chi.ch = ch;
 
-    return (this->*d_CharPtr)(ch);
+    (this->*d_CharPtr)(chi);
 }

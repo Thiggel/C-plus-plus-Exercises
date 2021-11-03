@@ -1,8 +1,10 @@
 #include "charCount.ih"
 
 
-void CharCount::append(char ch, size_t idx)     // in fact:insert at the end,
+CharCount::CharIndex CharCount::append(CharIndex chi)     // in fact:insert at the end,
 {                                   //  at d_nfo.nCharObj
-    insert(ch, d_info.nCharObj);
+    chi.idx = d_info.nCharObj;
+    insert(chi);
+    return chi;
 }
 

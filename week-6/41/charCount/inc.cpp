@@ -1,6 +1,7 @@
 #include "charCount.ih"
 
-void CharCount::inc(char c, size_t idx) const
+CharCount::CharIndex CharCount::inc(CharIndex chi)
 {
-    ++d_info.ptr[idx].count;
+    ++d_info.ptr[chi.idx].count;
+    return chi;
 }

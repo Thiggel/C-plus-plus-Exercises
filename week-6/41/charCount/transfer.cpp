@@ -1,8 +1,11 @@
 #include "charCount.ih"
 
-void CharCount::transfer(Char *dest, size_t begin, size_t end)
+void CharCount::transfer(Char *ptr, size_t begin, size_t end)
 {
-    for (; begin != end; ++begin)           // transfer Char objects from
-        *dest++ = d_info.ptr[begin];        // begin to end to dest (and
-                                            // beyond)
+    for (; begin != end; ++begin)           // transfer Char objects
+    {
+        ptr[begin] = ptr[begin - 1];
+
+    }
+
 }
