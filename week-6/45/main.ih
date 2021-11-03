@@ -7,5 +7,5 @@ using namespace std;
 
 string tolowercase(string str);
 
-int increasing(void *obj, const void *ptrA, const void *ptrB);
-int nocasedec(void *obj, const void *ptrA, const void *ptrB);
+int increasing(const void *ptrA, const void *ptrB);
+int nocasedec(const void *ptrA, const void *ptrB);

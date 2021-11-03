@@ -1,6 +1,6 @@
 #include "main.ih"
 
-int increasing(void *obj, const void *ptrA, const void *ptrB)
+int increasing(const void *ptrA, const void *ptrB)
 {                                   // compare strings in increasing order
     string strA = **reinterpret_cast<string *const *>(ptrA);
     string strB = **reinterpret_cast<string *const *>(ptrB);

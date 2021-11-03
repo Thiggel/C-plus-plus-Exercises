@@ -1,6 +1,6 @@
 #include "main.ih"
 
-int nocasedec(void *obj, const void *ptrA, const void *ptrB)
+int nocasedec(const void *ptrA, const void *ptrB)
 {                       // compare strings decreasingly and case-insensitively
     string strA = tolowercase(**reinterpret_cast<string *const *>(ptrA));
     string strB = tolowercase(**reinterpret_cast<string *const *>(ptrB));

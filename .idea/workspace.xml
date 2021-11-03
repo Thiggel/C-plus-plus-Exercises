@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-6/45/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/45/nocasedec.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/45/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-6/45/tolowercase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-6/45/increasing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/increasing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-6/45/main.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/main.ih" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/45/nocasedec.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/nocasedec.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" afterDir="false" />
@@ -75,9 +71,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -97,6 +93,7 @@
       <workItem from="1634568197182" duration="2787000" />
       <workItem from="1634593854195" duration="1210000" />
       <workItem from="1634808717182" duration="18030000" />
+      <workItem from="1635960102570" duration="194000" />
     </task>
     <servers />
   </component>
