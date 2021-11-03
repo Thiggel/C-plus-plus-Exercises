@@ -2,7 +2,8 @@
 
 CharCount::Char *CharCount::enlarge(Char *old) const
 {
-    Char *tmp = new Char[d_info.capacity * 2];
+    d_info.capacity *= 2;
+    Char *tmp = rawCapacity();
 
     for (size_t idx = 0; idx != d_info.nCharObj; ++idx)
         tmp[idx] = old[idx];

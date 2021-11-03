@@ -8,12 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/increasing.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/increasing.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/main.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/main.ih" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/nocasedec.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/nocasedec.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/45/sort/sort_const.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/enlarge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/enlarge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/insert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/insert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/locate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/locate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/process.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/process.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/rawCapacity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/rawCapacity.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/transfer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/transfer.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <workItem from="1634568197182" duration="2787000" />
       <workItem from="1634593854195" duration="1210000" />
       <workItem from="1634808717182" duration="18030000" />
-      <workItem from="1635960102570" duration="194000" />
+      <workItem from="1635960102570" duration="1688000" />
     </task>
     <servers />
   </component>

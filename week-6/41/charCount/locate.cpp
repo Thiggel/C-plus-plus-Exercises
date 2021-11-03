@@ -6,10 +6,10 @@ CharCount::Action CharCount::locate(size_t *destIdx, char ch) const
     // negative char values from being
     // converted to very high size_t values
     for (
-            size_t idx = 0, uCh = static_cast<unsigned char>(ch);
-            idx != d_info.nCharObj;         // inspect all available chars
-            ++idx
-            )
+        size_t idx = 0, uCh = static_cast<unsigned char>(ch);
+        idx != d_info.nCharObj;         // inspect all available chars
+        ++idx
+    )
     {
         size_t available = static_cast<unsigned char>(
                 d_info.ptr[idx].ch
