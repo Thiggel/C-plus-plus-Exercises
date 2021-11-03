@@ -2,6 +2,13 @@
 
 void CharCount::insert(char ch, size_t idx)
 {
+    if (d_info.capacity == d_info.nCharObj)
+    {
+        enlarge(d_info.ptr);
+        Char *ptr = new Char[d_info.capacity];
+
+    }
+
     // room for a newly encountered character
     // is required: nCharObj + 1 elements
     Char *ptr = new Char[d_info.nCharObj + 1];

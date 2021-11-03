@@ -1,19 +1,9 @@
 #include "charCount.ih"
 
-void CharCount::process(char ch)
+CharCount::Char CharCount::process(char ch)
 {
-    switch (size_t idx; locate(&idx, ch))
-    {
-        case APPEND:
-            append(ch);
-            break;
+    size_t idx = locate(&idx, ch);
 
-        case INSERT:
-            insert(ch, idx);            // insert new entry at index `idx'
-            break;
+    return (this->*d_CharPtr)(ch);
 
-        case INC:
-            inc(idx);
-            break;
-    }
 }

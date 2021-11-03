@@ -1,5 +1,5 @@
 #include "charCount.h"
 
-#include <istream>
+#include <iostream>
 
 using namespace std;

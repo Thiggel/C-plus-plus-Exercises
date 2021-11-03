@@ -25,4 +25,5 @@ void showChar(char ch)
                 cout << static_cast<size_t>( static_cast<unsigned char>(ch) );
             break;
     }
+
 }

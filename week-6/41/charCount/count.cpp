@@ -2,6 +2,7 @@
 
 size_t CharCount::count(istream &in)
 {
+
     size_t nCharObjs = 0;
 
     char ch;
