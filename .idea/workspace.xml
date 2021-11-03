@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
+      <change afterPath="$PROJECT_DIR$/week-6/43/a.out.dSYM/Contents/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/enlarge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/enlarge.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/insert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/insert.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/locate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/locate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/process.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/process.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/rawCapacity.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/rawCapacity.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/transfer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/transfer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/42/42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/42/42.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/43/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +91,7 @@
       <workItem from="1634568197182" duration="2787000" />
       <workItem from="1634593854195" duration="1210000" />
       <workItem from="1634808717182" duration="18030000" />
-      <workItem from="1635960102570" duration="1688000" />
+      <workItem from="1635960102570" duration="3269000" />
     </task>
     <servers />
   </component>

@@ -17,7 +17,7 @@ delete str;
 
 Here, a string object is initialized with the new operator, calling its
 constructor.
-It is later deleted. Inbetween the two statements, the string length might be
+It is later deleted. In between the two statements, the string length might be
 changed, reallocating memory for it. Hence, using new and delete is
 appropriate here.
 
