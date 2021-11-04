@@ -19,7 +19,7 @@ struct CharCount            // struct, as CharCount defines public types
         size_t capacity;
     };
 
-    union CharIndex
+    struct CharIndex
     {
         char ch;
         size_t idx;

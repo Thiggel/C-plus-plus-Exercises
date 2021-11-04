@@ -3,8 +3,20 @@
 void CharCount::process(char ch)
 {
     CharIndex chi{};
-    chi.idx = locate(&chi.idx, ch);
     chi.ch = ch;
 
-    (this->*d_CharPtr)(chi);
+    switch (locate(&chi.idx, chi.ch))
+    {
+        case APPEND:
+            append(chi);
+            break;
+
+        case INSERT:
+            insert(chi);            // insert new entry at index `idx'
+            break;
+
+        case INC:
+            inc(chi);
+            break;
+    }
 }
