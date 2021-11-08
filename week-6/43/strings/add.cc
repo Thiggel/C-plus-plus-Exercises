@@ -7,8 +7,7 @@ void Strings::add(string const &next)
 
     tmp[d_size] = next;                 // store next
 
-    delete[] d_str;                     // return old memory
-
     d_str = tmp;                        // update d_str and d_size
+
     ++d_size;
 }

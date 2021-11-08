@@ -2,6 +2,7 @@
 #define INCLUDED_STRINGS_
 
 #include <iosfwd>
+#include "iostream"
 
 class Strings
 {
@@ -19,6 +20,8 @@ class Strings
         Strings(int argc, char *argv[]);
         Strings(char *environLike[]);
         Strings(std::istream &in);
+
+        ~Strings() = default;       //Fixes memory issue
 
         void swap(Strings &other);              
 

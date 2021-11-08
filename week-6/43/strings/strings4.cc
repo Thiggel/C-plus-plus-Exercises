@@ -7,6 +7,5 @@ Strings::Strings(istream &in)
 {
     string line;
     while (getline(in, line))
-      add(line);
-
+        add(line);
 }
