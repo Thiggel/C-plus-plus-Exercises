@@ -9,20 +9,7 @@ between the new and delete operations might require the dynamic allocation of
 memory, this is appropriate.
 
 
-2. Operators new and delete on class types:
-
-string *str = new string(7, ' ');
-// ...
-delete str;
-
-Here, a string object is initialized with the new operator, calling its
-constructor.
-It is later deleted. In between the two statements, the string length might be
-changed, reallocating memory for it. Hence, using new and delete is
-appropriate here.
-
-
-3. Operators new[] and delete[]:
+2. Operators new[] and delete[]:
 
 std::string *sp = new std::string[10];
 // ...
@@ -34,7 +21,7 @@ size might be changed and memory might be reallocated, it is appropriate to
 use new[] and delete[].
 
 
-4. "operator new" and "operator delete":
+3. "operator new" and "operator delete":
 
 string *block = static_cast<string *>(operator new(10 * sizeof(std::string)));
 
@@ -49,7 +36,7 @@ later used when the string that is to be saved is known, which is why it is
 appropriately placed here.
 
 
-5. "placement new":
+4. "placement new" 1:
 
 using std::string;
 
@@ -65,3 +52,25 @@ In this example, memory of a specific size is allocated using the "placement
 new" operator and can be reallocated later, when the array has to be
 enlarged. In this example, the destructor has to be called for every element
 of the array to free the memory
+
+
+5. "Placement new" 2:
+
+auto *newMemory = static_cast<string *>(                 
+            operator new(1 * sizeof(string)));
+
+for (size_t idx = 0; idx != 1; ++idx)                  
+    new(newMemory + idx) string{"hello"};
+    
+//...
+
+new (newMemory + 1) std::string{ "next" };
+
+//...
+    
+delete[] newMemory;
+
+Here we use a different type of "placement new" operator to allocate memory.
+Again, memory could be set aside to be used for later; furthermore if the 
+memory that has been set has been used up, the possibility to add more is
+available. 
