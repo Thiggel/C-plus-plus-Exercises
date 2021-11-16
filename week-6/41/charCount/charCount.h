@@ -9,7 +9,6 @@ struct CharCount            // struct, as CharCount defines public types
     {
         char ch;
         size_t count;
-
     };
 
     struct CharInfo

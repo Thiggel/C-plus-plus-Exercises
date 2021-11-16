@@ -1,0 +1,1 @@
+In this exercise, a faulty program using the fstream class had to be fixed.

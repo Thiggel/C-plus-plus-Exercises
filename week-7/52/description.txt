@@ -1,0 +1,2 @@
+In this exercise, a manipulator should be constructed that outputs the current
+ time.

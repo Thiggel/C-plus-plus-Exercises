@@ -1,0 +1,9 @@
+The output is not what was shown, because the istringstream is set to a
+specific flag after reading input, e.g. goodbit if the number was read
+successfully without errors. Thus, a second number cannot be read without
+first clearing the flags and reseting the stream. That's why, to fix the
+program, we just inserted the line
+
+    istr.clear();
+
+before line 21, where the next string is read (istr.str(argv[2])).

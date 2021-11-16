@@ -1,0 +1,4 @@
+In this exercise, two versions of a program that tries to output a string into
+ a buffer which has been set to failbit, one with a if-statement that checks
+ if the buffer is set to failbit and one without. The two programs should be
+ timed.

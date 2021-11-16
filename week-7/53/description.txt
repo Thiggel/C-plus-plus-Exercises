@@ -1,0 +1,2 @@
+In this exercise, a program outputting a floating point number in different
+formats was to be constructed.

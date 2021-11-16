@@ -1,0 +1,7 @@
+Explain the differences in execution time:
+
+...
+
+formulate a general rule of thumb:
+
+...

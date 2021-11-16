@@ -7,11 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-6/43/a.out.dSYM/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/49/49.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/49/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/49/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/49/main.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/49/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/50/50.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/50/50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/50/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/50/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/51/51.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/51/51.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/51/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/51/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/52/52.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/52/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/52/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/53/description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/53/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/53/order.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/42/42.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/42/42.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/43/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/43/strings/safeat.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/charCount.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/charCount.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +84,6 @@
       <recent name="$PROJECT_DIR$/week-4/30/calculator" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,6 +101,7 @@
       <workItem from="1634593854195" duration="1210000" />
       <workItem from="1634808717182" duration="18030000" />
       <workItem from="1635960102570" duration="3269000" />
+      <workItem from="1637055824890" duration="3000" />
     </task>
     <servers />
   </component>

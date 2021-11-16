@@ -1,0 +1,2 @@
+In this exercise, the unexpected behavior of a program should be explained and
+ improved.

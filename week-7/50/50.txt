@@ -1,0 +1,9 @@
+Explain this outcome, and show how the program can be fixed:
+
+the class fstream is more general than ofstream. It can be used to input and
+to output text. Therefore, we need to fix the program by supplying whether we
+want to input and output text:
+
+    fstream out2{ "/tmp/out2", ios::out };
+
+the complete fixed program will be attached.
