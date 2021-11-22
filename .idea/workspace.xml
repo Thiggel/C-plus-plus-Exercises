@@ -7,27 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-7/49/49.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/49/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/49/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/49/main.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/49/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/50/50.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/50/50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/50/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/50/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/51/51.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/51/51.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/51/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/51/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/52/52.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/52/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/52/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/53/description.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/53/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/53/order.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/62.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyDouble.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyWord.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_double.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_value.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_word.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyWord.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/s_copy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/s_destroy.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-6/41/charCount/charCount.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-6/41/charCount/charCount.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +62,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-6/45" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-8/62/data" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-8/62/data" />
+      <recent name="$PROJECT_DIR$/week-8/62/data/DataWrapper" />
       <recent name="$PROJECT_DIR$/week-6/45" />
       <recent name="$PROJECT_DIR$/week-6/45/sort" />
       <recent name="$PROJECT_DIR$/week-6/48/calculator" />
-      <recent name="$PROJECT_DIR$/week-6/48" />
-      <recent name="$PROJECT_DIR$/week-6/47/symtab" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/week-6/45" />
@@ -83,6 +81,13 @@
       <recent name="$PROJECT_DIR$/week-4/31/calculator" />
       <recent name="$PROJECT_DIR$/week-4/30/calculator" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
