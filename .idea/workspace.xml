@@ -7,25 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-8/62/62.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyDouble.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyValue.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/copyWord.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data.ih" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_double.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_value.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/data_word.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyValue.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroyWord.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/s_copy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/s_destroy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/53/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-7/56/62.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-7/49/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/49/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-7/51/51.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/51/51.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-7/53/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-7/53/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/order.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
