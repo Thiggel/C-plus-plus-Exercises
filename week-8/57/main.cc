@@ -13,10 +13,6 @@ int main(int argc, char **argv)
             for (char **ptr = environ; *ptr; ++ptr)
                 env.add(*ptr);
         }
-
-        Strings copied { env };
-        Strings moved { move(env) };
-
     }
 
 }

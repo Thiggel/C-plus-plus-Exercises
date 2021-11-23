@@ -10,6 +10,8 @@ private:
     int *d_storage;
     size_t d_count;
 
+    void deleteEntryObjects();
+
 public:
     explicit Numbers(size_t count);
     Numbers(size_t count, int value);
@@ -19,6 +21,8 @@ public:
 
     Numbers(Numbers &&numbers) noexcept;     //move constructor
     Numbers &operator=(Numbers &&numbers) noexcept;
+
+    void swap(Numbers &other);
 
     void at(int index, int value);
     void write();

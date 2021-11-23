@@ -10,7 +10,7 @@ Strings &Strings::operator=(Strings const &other)
         d_size = other.d_size;
         d_str = rawStrings(other.d_size);
 
-        swap(other);
+        copy(other);
     }
 
     return *this;

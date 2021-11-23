@@ -20,7 +20,8 @@ class Strings
         Strings(Strings &&other) noexcept;
         Strings &operator=(Strings &&other) noexcept;
 
-        void swap(Strings const &other);
+        void copy(Strings const &other);
+        void swap(Strings &other);
 
         ~Strings();
 

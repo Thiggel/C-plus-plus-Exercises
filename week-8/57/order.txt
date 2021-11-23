@@ -1,0 +1,14 @@
+description.txt
+
+strings/strings.h
+strings/strings.ih
+strings/stringsCopy.cc
+strings/stringsCopAssign.cc
+strings/stringsMove.cc
+strings/stringsMoveAssign.cc
+strings/copy.cc
+strings/swap.cc
+
+main.cc
+
+main.ih

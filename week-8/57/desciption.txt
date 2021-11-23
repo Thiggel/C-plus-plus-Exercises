@@ -1,0 +1,1 @@
+In this assignment, we were tasked with adding the copy and move constructor to the Strings class.

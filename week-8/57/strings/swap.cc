@@ -1,6 +1,8 @@
 #include "strings.ih"
 
-void Strings::swap(Strings const &other)
+void Strings::swap(Strings &other)
 {
-    copy(other.d_str, other.d_str + this->d_size, this->d_str);
+    ::swap(d_size, other.d_size);
+    ::swap(d_str, other.d_str);
+    ::swap(d_capacity, other.d_capacity);
 }

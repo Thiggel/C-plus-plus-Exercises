@@ -1,0 +1,1 @@
+For this task, we were assigned with creating a simple value class, as well as implementing a copy and move constructor/assignment.
