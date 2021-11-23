@@ -7,13 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-7/53/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/56/62.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/copy_init.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/destroy_init.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/number.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swap2Double.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swap2Value.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swap2Word.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapDoubleValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapDoubleWord.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapValueDouble.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapValueWord.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapWordDouble.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swapWordValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/swap_init.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/value.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/62/data/word.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/49/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/49/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/51/51.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/51/51.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/53/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/53/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/order.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/62.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/description.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/DataWrapper/dataWrapper.ih" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/order.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/data.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +70,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/week-8/62/data" />
+      <recent name="$PROJECT_DIR$/week-8/59/strings" />
       <recent name="$PROJECT_DIR$/week-8/62/data/DataWrapper" />
       <recent name="$PROJECT_DIR$/week-6/45" />
       <recent name="$PROJECT_DIR$/week-6/45/sort" />
-      <recent name="$PROJECT_DIR$/week-6/48/calculator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/week-6/45" />

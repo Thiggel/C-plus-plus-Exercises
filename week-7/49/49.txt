@@ -1,4 +1,5 @@
 Explain the differences in execution time:
+
 Without if statement:
     real    0m11,290s
     user    0m11,218s
@@ -8,8 +9,10 @@ With if statement:
     user    0m8,516s
     sys     0m0,020s
 
-...
+More operations result in a slightly longer run time.
 
 formulate a general rule of thumb:
 
-...
+you should always check the state of an output stream 
+operation before actually adding items into the stream,
+because it might yield unnecessary error messages.

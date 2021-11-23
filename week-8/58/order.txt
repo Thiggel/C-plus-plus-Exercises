@@ -1,0 +1,16 @@
+description.txt
+
+numbers/numbers.h
+numbers/numbers.ih
+numbers/numbers1.cpp
+numbers/numbers2.cpp
+numbers/numbwerCopy.cpp
+numbers/copyAssignment.cpp
+numbers/numbersMove.cpp
+numbers/moveAssignment.cpp
+numbers/swap.cpp
+numbers/write.cpp
+numbers/at.cpp
+numbers/destructor.cpp
+
+main.cpp
