@@ -1,0 +1,6 @@
+std display      '          12.08'
+left aligned     '12.08          '
+right aligned    '          12.08'
+3 digits         '           12.1'
+4-digit fraction '        12.0800'
+std display      '          12.08'

@@ -1,13 +1,17 @@
 #include <iostream>
 #include <iomanip>
+#include <sstream>
 
 using namespace std;
 
 int main()
 {
-    float value = 12.04;
+    float value = 12.08;
 
-    cout << "std display      '" << setw(15) << value << "'\n"
+
+
+    cout <<
+            "std display      '" << setw(15) << value << "'\n"
 
             "left aligned     '" << setw(15) << left << value << "'\n"
 
@@ -19,6 +23,7 @@ int main()
             "4-digit fraction '"
             << setw(15) << setprecision(4) << value << "'\n"
 
-            "std display      '"
-            << setw(15) << setprecision(2) << value << "'\n";
+           "std display      '"
+            << setw(15) << (std::ostringstream() << value).str() <<
+            "'\n";
 }

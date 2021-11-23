@@ -1,8 +1,12 @@
 The output is not what was shown, because the istringstream is set to a
-specific flag after reading input, e.g. goodbit if the number was read
-successfully without errors. Thus, a second number cannot be read without
-first clearing the flags and reseting the stream. That's why, to fix the
-program, we just inserted the line
+specific error state flag after reading input, e.g. goodbit if the number was
+read successfully without errors. A flag saves the status of the stream as one
+of its attributes, i.e. the flag serves the purpose of saving whether
+the last read input was erroneous or not. The flag hence also saves whether
+there is something already saved in the stream, which is the problem here.
+Since a number has already been read, the stream can't be filled again.
+Thus, a second number cannot be read without first clearing the flags and
+reseting the stream. That's why, to fix the program, we just inserted the line
 
     istr.clear();
 
