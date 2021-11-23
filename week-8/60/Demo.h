@@ -18,9 +18,15 @@ public:
         cout << "Copy constructor called";
     }
 
+    Demo(const Demo &&demo) //move constructor
+    {
+        cout << "Move constructor called";
+    }
     ~Demo()
     {
         cout << "Destructor called";
     }
+
+    Demo &operator=(Demo const &rvalue);   // from slides "ClassName &operator=(ClassName const &rvalue);"
 };
 #endif
