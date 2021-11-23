@@ -7,13 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-7/53/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-7/56/62.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/59.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/add.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/count.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/destroy.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/enlargeByCopy.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/enlargeByMove.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/fill.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/frame" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/iterate.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/release.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/safeat.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings.ih" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings1.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings2.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings3.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings4.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings5.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/strings_destruct.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week-8/59/strings/swap.cc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/49/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/49/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/51/51.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/51/51.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/53/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-7/53/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-7/53/order.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +64,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-8/62/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week-8/59/strings" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week-8/59/strings" />
       <recent name="$PROJECT_DIR$/week-8/62/data" />
       <recent name="$PROJECT_DIR$/week-8/62/data/DataWrapper" />
       <recent name="$PROJECT_DIR$/week-6/45" />
       <recent name="$PROJECT_DIR$/week-6/45/sort" />
-      <recent name="$PROJECT_DIR$/week-6/48/calculator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/week-6/45" />
