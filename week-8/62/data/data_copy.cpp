@@ -2,5 +2,5 @@
 
 Data::Data(Data const &other, Type type)
 {
-    (this->*s_copy[type])(other);
+    copy(type, other);
 }

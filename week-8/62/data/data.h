@@ -39,7 +39,7 @@ public:
     void copyDouble(Data const &other);
     void copyWord(Data const &other);
     void copyValue(Data const &other);
-    void copy(Type type, Data &other);
+    void copy(Type type, Data const &other);
 
     void swap(Type current, Data &other, Type next);
     static void (Data::*s_swap[][3])(Data &other);

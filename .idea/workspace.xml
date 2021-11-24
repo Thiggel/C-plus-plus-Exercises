@@ -7,34 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/copy.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/data/swap.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week-8/62/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/copyDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/copyDouble.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/copy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/copy_init.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/week-8/62/data/data.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/data_double.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data_double.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/data_value.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data_value.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/data_word.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data_word.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroyValue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroyValue.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroyWord.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroyWord.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroy_init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroy_init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/number.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/number.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/s_copy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/s_destroy.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap2Double.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swap2Double.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap2Word.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swap2Word.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swapDoubleValue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swapDoubleValue.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swapDoubleWord.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swapDoubleWord.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swapValueDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swapValueDouble.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swapWordDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swapWordDouble.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swapWordValue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swapWordValue.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap_init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swap_init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/value.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/value.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/word.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/word.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroy_init.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap_init.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/week-8/62/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/order.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +99,7 @@
       <workItem from="1634808717182" duration="18030000" />
       <workItem from="1635960102570" duration="3269000" />
       <workItem from="1637055824890" duration="3000" />
-      <workItem from="1637741885563" duration="4431000" />
+      <workItem from="1637741885563" duration="5366000" />
     </task>
     <servers />
   </component>

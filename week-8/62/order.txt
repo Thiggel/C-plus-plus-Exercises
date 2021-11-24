@@ -5,16 +5,13 @@ data/data_double.cpp
 data/data_word.cpp
 data/data_value.cpp
 data/data_copy.cpp
-data/copy_init.cpp
 data/copyDouble.cpp
 data/copyValue.cpp
 data/copyWord.cpp
 data/destroy.cpp
-data/destroy_init.cpp
 data/destroyDouble.cpp
 data/destroyWord.cpp
 data/destroyValue.cpp
-data/swap_init.cpp
 data/swap2Double.cpp
 data/swap2Word.cpp
 data/swap2Value.cpp
