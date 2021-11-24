@@ -1,0 +1,1 @@
+For this question, we were tasked with creating a simple class Demo, to demonstrate the uses of copy and move constructors.
