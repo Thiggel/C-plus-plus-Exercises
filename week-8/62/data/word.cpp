@@ -1,6 +1,6 @@
 #include "data.ih"
 
-double word() const
+string const Data::word() const
 {
     return u_word;
 }

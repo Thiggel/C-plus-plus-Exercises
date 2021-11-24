@@ -1,6 +1,6 @@
 #include "data.ih"
 
-Data(std::string word)
+Data::Data(string const word)
 :
     u_word(word)
 {}

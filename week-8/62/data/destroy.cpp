@@ -1,6 +1,6 @@
 #include "data.ih"
 
-void Data::destroy(Data::Field field)
+void Data::destroy(Type type)
 {
-    (this->*s_destroy[field])();
+    (this->*s_destroy[type])();
 }

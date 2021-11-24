@@ -1,6 +1,6 @@
 #include "data.ih"
 
-double number() const
+double * const *Data::number() const
 {
     return u_double;
 }

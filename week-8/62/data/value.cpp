@@ -1,6 +1,6 @@
 #include "data.ih"
 
-double value() const
+size_t const Data::value() const
 {
     return u_value;
 }

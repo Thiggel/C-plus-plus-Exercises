@@ -1,6 +1,6 @@
 #include "data.ih"
 
-Data::Data(Data const &other, Type type)
+void Data::copy(Type type, Data &other)
 {
     (this->*s_copy[type])(other);
 }

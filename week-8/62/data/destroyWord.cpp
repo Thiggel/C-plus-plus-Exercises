@@ -1,6 +1,6 @@
 #include "data.ih"
 
-void DataWrapper::destroyWord()
+void Data::destroyWord()
 {
     u_word.std::string::~string();
 }

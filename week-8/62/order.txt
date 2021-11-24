@@ -9,13 +9,11 @@ data/copy_init.cpp
 data/copyDouble.cpp
 data/copyValue.cpp
 data/copyWord.cpp
-data/s_copy.cpp
 data/destroy.cpp
 data/destroy_init.cpp
 data/destroyDouble.cpp
 data/destroyWord.cpp
 data/destroyValue.cpp
-data/s_destroy.cpp
 data/swap_init.cpp
 data/swap2Double.cpp
 data/swap2Word.cpp

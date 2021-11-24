@@ -2,7 +2,10 @@
 
 void Data::swapDoubleValue(Data &other)
 {
-    double *tmp[10] = u_double;
-    u_value = other.u_value;
-    other.u_double = tmp;
+    size_t tmp = other.u_value;
+
+    for (size_t index = 0; index < 10; ++index)     // copy double
+        *other.u_double[index] = *u_double[index];
+
+    u_value = tmp;
 }

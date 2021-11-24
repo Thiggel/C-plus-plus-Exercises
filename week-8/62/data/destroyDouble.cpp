@@ -1,4 +1,4 @@
 #include "data.ih"
 
-void DataWrapper::destroyDouble()
+void Data::destroyDouble()
 {}

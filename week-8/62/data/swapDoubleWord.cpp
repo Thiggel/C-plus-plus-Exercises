@@ -2,11 +2,11 @@
 
 void Data::swapDoubleWord(Data &other)
 {
-    double *tmp[10] = u_double;                     // save the current object
+    string tmp{ move(other.u_word) };               // save temporarily
+    other.u_word.~string();
 
-    new(&u_word) string{ move(other.u_word) }; // install other object
+    for (size_t index = 0; index < 10; ++index)     // copy double
+        *other.u_double[index] = *u_double[index];
 
-    other.u_word.~string();                    // properly destroy object
-
-    other.u_double = tmp;                      // install at other
+    new(&u_word) string{ move(tmp) };               // copy word
 }

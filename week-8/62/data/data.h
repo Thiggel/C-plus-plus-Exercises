@@ -18,29 +18,30 @@ public:
     Data(Data const &other) = delete;
     ~Data();
 
-    Data(const double *num[10]);
-    Data(const std::string word);
-    Data(const size_t value);
+    Data(double *const num[10]);
+    Data(std::string const word);
+    Data(size_t const value);
 
-    Data(Data const &other, Field type);
+    Data(Data const &other, Type type);
     Data(Data &&tmp, Type type);
 
-    double number() const;
-    std::string word() const;
-    size_t value() const;
+    double * const *number() const;
+    std::string const word() const;
+    size_t const value() const;
 
     static void (Data::*s_destroy[])();
-    destroyDouble();
-    destroyWord();
-    destroyValue();
-    destroy(Type type);
+    void destroyDouble();
+    void destroyWord();
+    void destroyValue();
+    void destroy(Type type);
 
     static void (Data::*s_copy[])(Data const &other);
-    copyDouble();
-    copyWord();
-    copyValue();
+    void copyDouble(Data const &other);
+    void copyWord(Data const &other);
+    void copyValue(Data const &other);
+    void copy(Type type, Data &other);
 
-    void swap(Field current, Union &other, Field next);
+    void swap(Type current, Data &other, Type next);
     static void (Data::*s_swap[][3])(Data &other);
     void swap2Double(Data &other);
     void swap2Word(Data &other);
