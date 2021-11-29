@@ -1,0 +1,31 @@
+We can see here that memory alloction was not affected by the "last" constructor:
+
+==3745== HEAP SUMMARY:
+==3745==     in use at exit: 0 bytes in 0 blocks
+==3745==   total heap usage: 6 allocs, 6 frees, 73,792 bytes allocated
+==3745== 
+==3745== All heap blocks were freed -- no leaks are possible
+==3745== 
+==3745== For lists of detected and suppressed errors, rerun with: -s
+==3745== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+
+output main():
+
+0
+805306368
+0
+
+0
+805306368
+0
+
+0
+805306368
+0
+805306368
+-65534
+
+0
+805306368
+0

@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     
-    Numbers temp (3, 0), demo2(5, 2);
+    Numbers temp (3), demo2(5);
 
     Numbers copied(temp);
 
