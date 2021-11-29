@@ -14,6 +14,10 @@ private:
     std::string u_word;
     size_t u_value;
 
+    static void (Data::*s_destroy[])();
+    static void (Data::*s_copy[])(Data const &other);
+    static void (Data::*s_swap[][3])(Data &other);
+
 public:
     Data(Data const &other) = delete;
     ~Data();
@@ -29,20 +33,17 @@ public:
     std::string const word() const;
     size_t const value() const;
 
-    static void (Data::*s_destroy[])();
     void destroyDouble();
     void destroyWord();
     void destroyValue();
     void destroy(Type type);
 
-    static void (Data::*s_copy[])(Data const &other);
     void copyDouble(Data const &other);
     void copyWord(Data const &other);
     void copyValue(Data const &other);
     void copy(Type type, Data const &other);
 
     void swap(Type current, Data &other, Type next);
-    static void (Data::*s_swap[][3])(Data &other);
     void swap2Double(Data &other);
     void swap2Word(Data &other);
     void swap2Value(Data &other);

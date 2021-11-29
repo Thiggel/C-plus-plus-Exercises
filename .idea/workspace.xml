@@ -8,16 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="97675a5e-ba74-4303-9b96-7f1905eca05c" name="Changes" comment="e">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/copy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/copy_init.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/week-8/62/data/data.h" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/data_copy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroy_init.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/swap.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/data/swap_init.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week-8/62/order.txt" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/order.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/week-8/62/data/destroyDouble.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +67,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -99,7 +91,8 @@
       <workItem from="1634808717182" duration="18030000" />
       <workItem from="1635960102570" duration="3269000" />
       <workItem from="1637055824890" duration="3000" />
-      <workItem from="1637741885563" duration="5366000" />
+      <workItem from="1637741885563" duration="5816000" />
+      <workItem from="1638186279228" duration="1729000" />
     </task>
     <servers />
   </component>
