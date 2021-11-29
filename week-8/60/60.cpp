@@ -12,8 +12,8 @@ public:
     // Main constructor
     explicit Demo(size_t size)
     :
-    d_size(size),
-    d_ptr(new int[size])
+        d_size(size),
+        d_ptr(new int[size])
     {
         cout << "Default constructor called" << endl;
     }
@@ -29,8 +29,8 @@ public:
     // Copy constructor
     Demo(Demo const &other)
     :
-    d_size(other.d_size),
-    d_ptr(new int[other.d_size])
+        d_size(other.d_size),
+        d_ptr(new int[other.d_size])
     {
         cout << "Copy constructor called" << endl;
 
@@ -51,8 +51,8 @@ public:
     // Move constructor
     Demo(Demo &&other) noexcept
     :
-    d_size(other.d_size),
-    d_ptr(other.d_ptr)
+        d_size(other.d_size),
+        d_ptr(other.d_ptr)
     {
         cout << "Move constructor called" << endl;
 
