@@ -104,6 +104,4 @@ private:
 int main() {
 
     Demo::factory();
-
-    return 0;
 }
