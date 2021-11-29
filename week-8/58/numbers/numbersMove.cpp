@@ -2,10 +2,11 @@
 
 Numbers::Numbers(Numbers &&numbers) noexcept
 :
-d_count(0),
-d_storage(nullptr)
+d_count(numbers.d_count),
+d_storage(numbers.d_storage)
 {
-    numbers.swap(*this);
+    numbers.d_count = 0;
+    numbers.d_storage = 0;
 }
 
 

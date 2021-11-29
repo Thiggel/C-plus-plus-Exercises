@@ -1,8 +1,7 @@
 #include "numbers.ih"
 
-Numbers &Numbers::operator=(Numbers &&numbers)  noexcept {
-
-    numbers.swap(*this);
+Numbers &Numbers::operator=(Numbers &&numbers)  noexcept
+{
+    swap(numbers);
     return *this;
 }
-

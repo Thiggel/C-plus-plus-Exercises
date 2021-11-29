@@ -1,16 +1,14 @@
 #ifndef NUMBERS_H
 #define NUMBERS_H
 
-#pragma once
 #include <iostream>
 
 class Numbers{
 
 private:
-    int *d_storage;
-    size_t d_count;
 
-    void deleteEntryObjects();
+    size_t d_count;
+    int *d_storage;
 
 public:
     explicit Numbers(size_t count);
@@ -20,14 +18,21 @@ public:
     Numbers &operator=(Numbers const &numbers);//copy assignment
 
     Numbers(Numbers &&numbers) noexcept;     //move constructor
-    Numbers &operator=(Numbers &&numbers) noexcept;
+    Numbers &operator=(Numbers &&numbers) noexcept; //move assignment
 
     void swap(Numbers &other);
 
-    void at(int index, int value);
+    void at(size_t index, int value);
     void write();
+
+    size_t size();
 
     ~Numbers();
 };
+
+inline size_t Numbers::size()
+{
+    return d_count;
+}
 
 #endif

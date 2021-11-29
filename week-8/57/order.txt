@@ -6,8 +6,8 @@ strings/stringsCopy.cc
 strings/stringsCopAssign.cc
 strings/stringsMove.cc
 strings/stringsMoveAssign.cc
-strings/copy.cc
 strings/swap.cc
+strings/write.cc
 
 main.cc
 

@@ -3,8 +3,9 @@
 Numbers::Numbers(const Numbers &numbers)
 :
 d_count(numbers.d_count),
-d_storage(numbers.d_storage)
+d_storage(new int[numbers.d_count])
 {
-    copy(numbers.d_storage, numbers.d_storage + d_count, d_storage);
+    for (size_t idx = 0; idx != d_count; ++idx)
+        d_storage[idx] = numbers.d_storage[idx];
 }
 

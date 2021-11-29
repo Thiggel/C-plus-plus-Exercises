@@ -4,7 +4,7 @@ numbers/numbers.h
 numbers/numbers.ih
 numbers/numbers1.cpp
 numbers/numbers2.cpp
-numbers/numbwerCopy.cpp
+numbers/numbersCopy.cpp
 numbers/copyAssignment.cpp
 numbers/numbersMove.cpp
 numbers/moveAssignment.cpp

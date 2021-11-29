@@ -2,5 +2,5 @@
 
 Numbers::~Numbers()
 {
-    cout << "Numbers object deleted" << endl;
+    delete[] d_storage;
 }

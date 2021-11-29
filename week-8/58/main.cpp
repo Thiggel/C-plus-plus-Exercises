@@ -1,30 +1,30 @@
 #include <iostream>
+#include "numbers/numbers.h"
 
 using namespace std;
 
-int main() {
+int main()
+{
+    
+    Numbers temp (3, 0), demo2(5, 2);
 
-    Numbers temp {3};
+    Numbers copied(temp);
 
-    cout << "init object: " << endl;
-    temp.write();
-    cout << endl;
-
-    Numbers copied { temp };
-
-    Numbers moved { move(temp)};
-
-    cout << "copied object:" << endl;
     copied.write();
     cout << endl;
 
-    cout << "old object: ";
-    temp.write();
-    cout << endl;
+    Numbers moved(move(copied));
 
-    cout << "moved object: " << endl;
     moved.write();
     cout << endl;
 
-    return 0;
+    temp = demo2;
+    temp.write();
+    cout << endl;
+
+    temp = move(moved);
+    temp.write();
+    cout << endl;
+
+
 }

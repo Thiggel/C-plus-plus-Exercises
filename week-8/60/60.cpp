@@ -22,6 +22,7 @@ public:
     ~Demo()
     {
         std::cout << "Destructor called" << std::endl;
+        delete[] d_ptr;
 
     }
 
@@ -33,21 +34,17 @@ public:
     {
         cout << "Copy constructor called" << endl;
 
-        copy(other.d_ptr, other.d_ptr + d_size, d_ptr);
+        for (size_t idx = 0; idx != d_size; ++idx)
+            d_ptr[idx] = other.d_ptr[idx];
     }
 
     // Copy assignment operator
     Demo &operator=(Demo const &other)
     {
-
         cout << "Copy assignment operator called" << endl;
 
-        delete[] d_ptr;
-
-        d_size = other.d_size;
-        d_ptr = new int[d_size];
-        copy(other.d_ptr, other.d_ptr + d_size, d_ptr);
-
+        Demo tmp { other };
+        swap(tmp);
         return *this;
     }
 
@@ -55,33 +52,42 @@ public:
     Demo(Demo &&other) noexcept
     :
     d_size(other.d_size),
-    d_ptr(new int[other.d_size])
+    d_ptr(other.d_ptr)
     {
         cout << "Move constructor called" << endl;
 
-        other.swap(*this);
+        other.d_size = 0;
+        other.d_ptr = 0;
     }
 
     Demo &operator=(Demo &&other) noexcept
     {
         cout << "Move assignment operator called" << endl;
 
-        delete[] d_ptr;
-        other.swap(*this);
-
+        swap(other);
         return *this;
+    }
+
+    static Demo elision()
+    {
+        Demo tmp(1);
+        return tmp;
     }
 
     static void factory()
     {
         Demo demo1(3), demo2(4), demo3(5);
 
-        Demo copied = demo1; // Copy elision
+        cout << "Copy elision: " << endl;
+        Demo copied(elision()); // Copy elision
 
+        cout << "Move constructor: " << endl;
         Demo moved(move(demo1)); // Move constructor
 
+        cout << "Copy assignment: " << endl;
         demo1 = demo2; // Copy assignment
 
+        cout << "Move assignment: " << endl;
         demo2 = move(demo3); // Move assignment
 
     }

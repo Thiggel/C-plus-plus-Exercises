@@ -2,6 +2,7 @@
 #define INCLUDED_STRINGS_
 
 #include <iosfwd>
+#include <istream>
 
 class Strings
 {
@@ -20,8 +21,8 @@ class Strings
         Strings(Strings &&other) noexcept;
         Strings &operator=(Strings &&other) noexcept;
 
-        void copy(Strings const &other);
         void swap(Strings &other);
+        void write();
 
         ~Strings();
 
